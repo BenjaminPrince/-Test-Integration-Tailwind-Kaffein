@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/CSS/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body class="">
+
+    <!-- ___________________________________________________________________
+
+                    Navbar
+___________________________________________________________________ -->
+    <nav class="p-5 shadow md:flex md:items-center md:justify-between" style="background-color: rgb(81,49,110) ">
+        <div class="flex justify-between items-center ">
+            <span class="text-2xl font-[adobe-clean] cursor-pointer">
+                <img class="h-10 inline" src="/src/logo-simple_white.png">
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon style="color:white" name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1] text-white md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+            style="background-color: rgb(81,49,110)">
+            <li class="mx-4 my-6 md:my-0 ">
+                <a href="#" class="text-2xl  hover:text-violet-500 duration-500 ">Agence</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-violet-500 duration-500">Services</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-violet-500 duration-500">Ka! clients</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-violet-500 duration-500">Blog</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-violet-500 duration-500">Contact</a>
+            </li>
+
+
+        </ul>
+    </nav>
+
+
+
+    <!-- ___________________________________________________________________
+
+                    Header
+___________________________________________________________________ -->
+
+
+
+    <header>
+        <section>
+            <div class="px-8 pt-48 pb-24 mx-auto lg:px-4 text-white " style="background-color: rgb(81,49,110)">
+                <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+                    <h1 class="mb-6 text-2xl font-semibold tracking-tighter  sm:text-5xl title-font">L'agence stimulante
+                        <br class="md:hidden">
+                        pour entreprise innovante
+                        <h2 class="mb-1 text-xs font-semibold tracking-widest  uppercase title-font">Notre leitmotiv
+                            donner naissance, faire vivre</h2>
+
+                    </h1>
+
+                </div>
+                <div class="flex lg:justify-center justify-center">
+                    <button style="background-color: rgb(230,96,105);"
+                        class="transform skew-x-3  inline-flex px-4 py-2 font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        Comment ???</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="px-8 pt-48 pb-24 mx-auto lg:px-4 text-dark " style="background-color: white">
+                <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+                    <h1 class="mb-6 text-2xl font-semibold tracking-tighter  sm:text-5xl title-font">Nous créons, nous
+                        developpons
+                        <br class="md:hidden">
+                        et nous vous accompagnons à la comercialisation de vos <span>service </span> ou <span> produits.
+                    </h1>
+
+                </div>
+                <div class="flex lg:justify-center justify-center">
+                    <button style="background-color: rgb(0,197,190);"
+                        class="transform skew-y-3 origin-bottom  inline-flex px-4 py-2 font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        Nos services</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="succes">
+            <h1> Nos Ka! clients</h1>
+            <div class="card1">
+                <img src="/computer.jpg" alt="computer">
+                <div class="card1Bis">
+                    <p>Slow-comestique <br> ecommerce</p>
+                </div>
+                <a href="#">Lire la suite!</a>
+            </div>
+            <div class="card2">
+                <img src="/computer.jpg" alt="computer">
+                <div class="card2Bis">
+                    <p>Objectif Terres <br> ebusiness</p>
+                </div>
+                <a href="#">Lire la suite!</a>
+            </div>
+            <button> Nos succès</button>
+        </div>
+
+
+
+        <div class="container">
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="user">
+                        <img src="/fenouil.jpeg" alt="picture">
+                        <div class="user-info">
+                            <h3>Fenouil Detox</h3>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit distinctio tempore
+                    praesentium beatae
+                    dolores, ea eveniet, sint sunt a itaque voluptatibus
+                    nobis quidem deserunt unde quisquam minus cum vero maxime.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- ___________________________________________________________________
+
+                    Footer
+___________________________________________________________________ -->
+
+
+        <footer class="text-white text-center " style="background-color: rgb(81,49,110)">
+            <div class=" p-6 text-center">
+                <div class="gap-4 ">
+                    <div class="mb-6 md:mb-0">
+                        <img class="h-55 inline " src="/src/logo-signature.png">
+                        <h3 class="font-medium mb-2 uppercase">L'agence stimulante pour entreprise innovante</h3>
+
+                        <ul class=" mb-4 ">
+                            <li><a href="#">Votre future agence</a></li>
+                            <li><a href="#">Votre projet commerce</a></li>
+                            <li><a href="#">Votre projet ebusiness</a></li>
+                            <li><a href="#">Nos clients</a></li>
+                            <li><a href="#">On en parle</a></li>
+                            <BR></BR>
+                            <li><a href="#">Prende un café|Mentions Légales</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-white p-4" style="background-color: rgba(0, 0, 0, 0.2)">© 2022 Kaffein Agency SARL
+            </div>
+
+        </footer>
+
+
+
+
+        <body>
+
+
+
+
+
+            <script src="JS/index.js"></script>
+
+</html>
