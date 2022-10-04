@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/CSS/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ___________________________________________________________________
+
+                    Navbar
+___________________________________________________________________ -->
+    <nav class="p-5 shadow md:flex md:items-center md:justify-between" style="background-color: rgb(81,49,110) ">
+        <div class="flex justify-between items-center ">
+            <span class="text-2xl font-[adobe-clean] cursor-pointer">
+                <img class="h-10 inline" src="/src/logo-simple_white.png">
+            </span>
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon style="color:white" name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1] text-white md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+            style="background-color: rgb(81,49,110)">
+            <li class="mx-4 my-6 md:my-0 ">
+                <a href="#" class="text-2xl  hover:text-violet-500 duration-500 ">Agence</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-violet-500 duration-500">Services</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-violet-500 duration-500">Ka! clients</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-violet-500 duration-500">Blog</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-2xl hover:text-violet-500 duration-500">Contact</a>
+            </li>
+
+
+        </ul>
+    </nav>
+
+
+
+    <!-- ___________________________________________________________________
+
+                    HEADER
+___________________________________________________________________ -->
+
+
+
+    <header>
+        <section>
+            <div class="px-8 pt-48 pb-24 mx-auto lg:px-4 text-white " style="background-color: rgb(81,49,110)">
+                <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+                    <h1 class="mb-6 text-2xl font-bold tracking-tighter  sm:text-5xl title-font">
+                        Nos experts sont
+                        <br class="md:hidden">
+                        aussi des plumes
+                        <h2 class="mb-1 text-base">
+                            Technique, marketing ou business
+                            <br class="md:hidden">
+                            intelligence, retrouvez tous les sujets qui nous passionnent
+                        </h2>
+                    </h1>
+
+                </div>
+                <div class="flex lg:justify-center justify-center">
+                    <button style="background-color: rgb(230,96,105);"
+                        class="transform -skew-y-1 origin-top inline-flex px-12 py-4  font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        Lire nos dossiers</button>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- ___________________________________________________________________
+
+                Header: Nos dossiers
+___________________________________________________________________ -->
+
+
+
+        <h1 class="text-4xl md:text-5xl text-black-700 font-bold text-center p-6" style="color: #252627">
+            Nos dossiers 
+        </h1>
+
+        <div class="flex justify-center pb-10 ">
+             <ul class="md:flex text-center text-black-900 ">
+            <li class="mx-1 my-2 md:my-0 ">
+                <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500 ">Tous </a> 
+            </li>|
+            <li class="mx-1 my-2 md:my-0">
+                <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">ecommerce  </a >
+            </li>|
+            <li class="mx-1 my-2 md:my-0">
+                <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">ebusiness </a> 
+            </li>|
+            <li class="mx-1 my-2 md:my-0">
+                <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">Business intelligence  </a >
+            </li>|
+            <li class="mx-1 my-2 md:my-0">
+                <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">Marketing </a> 
+            </li>|
+            <li class="mx-1 my-2 md:my-0">
+                <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">Formation </a> 
+            </li>
+        </ul>
+</div>
+       
+
+        <div class="wrapper antialiased ">
+            <div>
+                <div class="relative">
+                    <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
+                        class="w-full object-cover object-left  shadow-md" />
+                    <div class="absolute bottom-0 left-0 -ml-5 m-10">
+                        <div class="bg-white p-4 shadow-lg float-left"
+                            style="color:white; background:rgb(81, 49, 110);">
+                            <h4 class="text-base text-left font-bold leading-tight  truncate">Titre de l'article sur <br> deux lignes</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center p-4 m-2 font-semibold hover:text-green-400">
+                        Lire la suite !
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper antialiased ">
+            <div>
+                <div class="relative">
+                    <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
+                        class="w-full object-cover object-right  shadow-md" />
+                    <div class="absolute bottom-0 right-0 -mr-5 mb-10">
+                        <div class="bg-white p-4 shadow-lg float-right"
+                            style="color:white; background:rgb(81, 49, 110);">
+                            <h4 class="text-base text-right font-bold  flex flex-wrap">Très long titre <br> de l'article sur trois<br> lignes</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center p-4 m-2 font-semibold hover:text-green-400">
+                        Lire la suite !
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper antialiased ">
+            <div>
+                <div class="relative">
+                    <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
+                        class="w-full object-cover object-left  shadow-md" />
+                    <div class="absolute bottom-0 left-0 -ml-5 m-10">
+                        <div class="bg-white p-4 shadow-lg float-left"
+                            style="color:white; background:rgb(81, 49, 110);">
+                            <h4 class="text-base text-left font-bold leading-tight  truncate flex flex-wrap">
+                                Titre de l'article sur<br> deux lignes
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center p-4 m-2 font-semibold hover:text-green-400">
+                        Lire la suite !
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper antialiased ">
+            <div>
+                <div class="relative">
+                    <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
+                        class="w-full object-cover object-right  shadow-md" />
+                    <div class="absolute bottom-0 right-0 -mr-5 mb-10">
+                        <div class="bg-white p-4 shadow-lg float-right"
+                            style="color:white; background:rgb(81, 49, 110);">
+                            <h4 class="text-base text-right font-bold leading-tight  truncate">Très long titre <br> de l'article sur trois<br> lignes</h4>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center p-4 m-2 font-semibold hover:text-green-400">
+                        Lire la suite !
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- ___________________________________________________________________
+
+               Header:  Discutons de  votre projet
+___________________________________________________________________ -->
+
+
+        <section>
+            <div class="flex justify-center m-10">
+                <div class="block p-6 shadow-lg bg-white max-w-sm text-center"
+                    style="background-color:#00C5BE ; color:#FFFFFF;">
+                    <h5 class="text-3xl font-bold mb-5 ">Discutons de votre projet</h5>
+
+                    <p class="text-base  mb-4 text-align-left">
+                        Prenez le temps d’échanger à propos de votre projet avec nos conseillers. Nous vous apportons
+                        les réponses
+                        à vos problématiques.
+
+                    <div class="flex lg:justify-center justify-center m-2 p-6">
+                        <button style="background-color: rgb(230,96,105)"
+                            class="transform rotate-1 inline-flex px-12 py-4 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                            Prendre rendez-vous</button>
+
+                    </div>
+                    <a href="mailto:">Envoyez-nous un mail</a>
+                </div>
+            </div </section>
+
+  <!-- ___________________________________________________________________
+
+           Header  :  Nos services
+___________________________________________________________________ -->
+
+
+            <section>
+                <div class="px-8 pt-48 pb-24 mx-auto lg:px-4 text-dark " style="background-color: white">
+                    <div class="flex flex-col w-full mb-12 text-left lg:text-center">
+                        <h1 class="mb-6 text-2xl font-bold tracking-tighter  sm:text-5xl title-font text-center">Nous
+                            créons, nous
+                            developpons
+                            <br class="md:hidden">
+                            et nous vous accompagnons à la comercialisation de vos <span
+                                style="color: rgb(0,197,190);">services </span>
+                            ou <span style="color: rgb(0,197,190);"> produits </span>!
+                        </h1>
+
+                    </div>
+                    <div class="flex lg:justify-center justify-center">
+                        <button style="background-color: rgb(0,197,190); "
+                            class="transform skew-y-2 origin-bottom  inline-flex px-12 py-4 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                            Nos services</button>
+                    </div>
+                </div>
+            </section>
+
+
+  <!-- ___________________________________________________________________
+
+         Header: Follow !!!
+___________________________________________________________________ -->
+
+
+            <section>
+                <h1 class="text-4xl  text-align:left md:text-6xl text-black-700 font-bold text-center p-5 "
+                    style="color: #252627">
+                    Suivez-nous !</h1>
+
+                <p class="text-center">MARCHO PO LO !</p>
+                <div style="width:100%;height:0;padding-bottom:84%;position:relative;"><iframe
+                        src="https://giphy.com/embed/9J7tdYltWyXIY" width="100%" height="100%" style="position:absolute"
+                        frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+
+                </div>
+
+            </section>
+
+
+
+
+    </header>
+
+
+
+    <!-- ___________________________________________________________________
+
+                    FOOTER
+___________________________________________________________________ -->
+
+
+    <footer class="text-white text-center " style="background-color: rgb(81,49,110)">
+
+
+        <div class=" p-6 text-center">
+            <div class="gap-4 ">
+                <div class="mb-6 md:mb-0">
+                    <img class="h-55 inline " src="/src/logo-signature.png">
+                    <h3 class="font-medium mb-2 uppercase">L'agence stimulante pour entreprise innovante</h3>
+
+                    <ul class=" mb-4 ">
+                        <li><a href="#">Votre future agence</a></li>
+                        <li><a href="#">Votre projet commerce</a></li>
+                        <li><a href="#">Votre projet ebusiness</a></li>
+                        <li><a href="#">Nos clients</a></li>
+                        <li><a href="#">On en parle</a></li>
+                        <BR></BR>
+                        <li><a href="#">Prend un café|Mentions Légales</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-white p-4" style="background-color: rgba(0, 0, 0, 0.2)">© 2022 Kaffein Agency SARL
+        </div>
+
+    </footer>
+
+    <body>
+        <script src="JS/index.js"></script>
+
+</html>
