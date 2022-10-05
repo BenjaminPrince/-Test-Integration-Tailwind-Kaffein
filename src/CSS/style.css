@@ -1,10 +1,20 @@
+@font-face {
+    font-family: 'Bestlady'; 
+    src: url("/src/font/BESTLADY.otf") format("opentype");
+    font-style: normal;
+}
+
+
 .wrapper {
     display: grid;
     height: 100%;
     place-items: center
 }
 
-
-/* body{
-    font-family: 'Source Sans Pro', sans-serif;
-} */
+.pp{
+    transform: 
+        perspective(950px)
+        rotateX(4deg)
+        rotateY(-5deg)
+        rotateZ(1deg)
+}
