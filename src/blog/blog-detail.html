@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog-detail</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/src/CSS/style.css">
-    <link rel="stylesheet" href="/src/CSS/tailwind.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
@@ -23,11 +23,12 @@
 
                     Navbar
 ___________________________________________________________________ -->
-
-    <nav class="p-5 shadow md:flex md:items-center md:justify-between" style="background-color: rgb(81,49,110) ">
+<div style="position:relative">
+    <div class=" image radius">
+    <nav class="p-5 shadow md:flex md:items-center md:justify-between" >
         <div class="flex justify-between items-center ">
             <span class="text-2xl  cursor-pointer">
-                <img class="h-10 inline" src="/src/image/logo-simple_white.png">
+                <img class="h-10 inline" src="/src/images/logo-simple_white.png">
             </span>
 
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -36,7 +37,7 @@ ___________________________________________________________________ -->
         </div>
 
         <ul class="md:flex md:items-center z-[-1] text-white md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
-            style="background-color: rgb(81,49,110); font: Raleway;">
+            style="font: Raleway;">
             <li class="mx-4 my-6 md:my-0 ">
                 <a href="#" class="text-2xl  hover:text-violet-500 duration-500 ">Agence</a>
             </li>
@@ -56,47 +57,48 @@ ___________________________________________________________________ -->
 
         </ul>
     </nav>
-
-
+</div>
+ 
     <!-- ___________________________________________________________________
 
                     HEADER
 ___________________________________________________________________ -->
 
   
-    <header>
+    <header style="position:relative">
         <section>
-            <div class="px-8 pt-48 pb-24 mx-auto lg:px-4 text-white " style="background-color: rgb(81,49,110)">
+            <div class="radius  px-8 pt-48 pb-24 mx-auto lg:px-4 text-white ">
                 <div class="flex flex-col w-full mb-12 text-left lg:text-center">
-                    <h1 class="mb-6 text-5xl sm:text-6xl" style="font-size: 37px ;">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                   
+                    <h1 class=" mb-6 text-5xl sm:text-6xl" style="font-size: 37px ;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                     
                         <h2 class="text-base font-sans" style="font-size: 20px;">
                             Technique, marketing ou business
                             <br class="md:hidden">
                             intelligence, retrouvez tous les sujets qui nous passionnent
                         </h2>
-                    </h1>
+                    
                 </div>
         </section>
     </header>  
-    
+</div> 
      <!-- ___________________________________________________________________
 
                     HEADER : zone de texte
 ___________________________________________________________________ -->
 
 
-<div class="text-left p-10">
-    <h1 class= "text-xl" >Lorem ipsum dolor</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
+<div class="text-left p-10 leading-relaxed max-w-6xl m-auto">
+    <h1 class= "text-2xl font-bold mb-4 leading-relaxed" >Lorem ipsum dolor</h1>
+    <p class="text-sans  " >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi consectetur maxime molestiae non necessitatibus laborum voluptas rerum repudiandae, dignissimos architecto perferendis blanditiis debitis illum odio maiores saepe autem ea culpa!
     </p>
 </div>
 
-<div class="text-left p-10  ">
-    <h1 class= "text-xl 
-    " >Lorem ipsum dolor</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et  dolore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci unde similique tempora asperiores aut iure nam, dignissimos officia quod dolores dolor, eveniet, reprehenderit consectetur laboriosam nesciunt. Vero, temporibus deleniti!
+<div class="text-left p-10 leading-relaxed max-w-6xl m-auto">
+    <h1 class= "text-2xl font-bold mb-4 " >Lorem ipsum dolor</h1>
+    <p class="text-sans" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et  dolore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci unde similique tempora asperiores aut iure nam, dignissimos officia quod dolores dolor, eveniet, reprehenderit consectetur laboriosam nesciunt. Vero, temporibus deleniti!
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusantium neque iusto consequuntur reiciendis ducimus, itaque nihil perferendis! Odio earum officiis aliquid fuga repellat incidunt quasi rerum eum. Quo, unde.
     Necessitatibus optio doloribus, nesciunt suscius porro dolorum cum similique. Laborum suscipit omnis unde provident officia maxime, necessitatibus minus tempora ab, ducimus illo fugit error porro rem aliquam.
     Impedit deserunt consequuntur fuga temporibus. Cum ratione doloremque ab maxime voluptatum odit natus voluptate veritatis, ipsum voluptatibus deserunt exercitationem distinctio vitae sint aperiam placeat magni quasi officia minus, quo omnis?
@@ -110,8 +112,16 @@ ___________________________________________________________________ -->
                     HEADER : zone image
 ___________________________________________________________________ -->
 
-<div>
-    <img src="/src/image/computer.jpg" alt="">
+
+
+
+
+<div class="flex flex-wrap justify-center">
+    <img
+          src="/src/images/computer.jpg"
+          class="sm:min-w-xs md:max-w-2xl  shadow-lg"
+          alt="image computer"
+        />
 </div>
 
 
@@ -123,17 +133,17 @@ ___________________________________________________________________ -->
 
 
 
-<div class="text-left p-10">
-    <h1 class= "text-xl" >Lorem ipsum dolor</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
+<div class="text-left p-10 leading-relaxed max-w-6xl m-auto">
+    <h1 class= "text-2xl font-bold mb-4  " >Lorem ipsum dolor</h1>
+    <p class="text-sans" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi consectetur maxime molestiae non necessitatibus laborum voluptas rerum repudiandae, dignissimos architecto perferendis blanditiis debitis illum odio maiores saepe autem ea culpa!
     </p>
 </div>
 
 
-<div class="text-right p-10">
-    <h1 class= "text-xl" >Lorem ipsum dolor</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
+<div class="text-right p-10 leading-relaxed max-w-6xl m-auto">
+    <h1 class= "text-2xl font-bold mb-4 " >Lorem ipsum dolor</h1>
+    <p class="text-sans " >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi consectetur maxime molestiae non necessitatibus laborum voluptas rerum repudiandae, dignissimos architecto perferendis blanditiis debitis illum odio maiores saepe autem ea culpa!
     </p>
 </div>
@@ -141,11 +151,15 @@ ___________________________________________________________________ -->
 
  <!-- ___________________________________________________________________
 
-                    HEADER : zone image
+                    HEADER : zone image2
 ___________________________________________________________________ -->
 
-<div>
-    <img src="/src/image/web-computer2.jpg" alt="">
+<div class="flex flex-wrap justify-center">
+    <img
+          src="/src/images/web-computer2.jpg"
+          class="sm:min-w-xs md:max-w-2xl h-auto shadow-lg"
+          alt=""
+        />
 </div>
 
 
@@ -154,22 +168,27 @@ ___________________________________________________________________ -->
                     HEADER : zone text 3
 ___________________________________________________________________ -->
 
-<div class="text-left p-10  ">
-    <h1 class= "text-xl " >Lorem ipsum dolor</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et  dolore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci unde similique tempora asperiores aut iure nam, dignissimos officia quod dolores dolor, eveniet, reprehenderit consectetur laboriosam nesciunt. Vero, temporibus deleniti!
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse accusantium neque iusto consequuntur reiciendis ducimus, itaque nihil perferendis! Odio earum officiis aliquid fuga repellat incidunt quasi rerum eum. Quo, unde.
-    Necessitatibus optio doloribus, nesciunt suscius porro dolorum cum similique. Laborum suscipit omnis unde provident officia maxime, necessitatibus minus tempora ab, ducimus illo fugit error porro rem aliquam.
-    Impedit deserunt consequuntur fuga temporibus. Cum ratione doloremque ab maxime voluptatum odit natus voluptate veritatis, ipsum voluptatibus deserunt exercitationem distinctio vitae sint aperiam placeat magni quasi officia minus, quo omnis?
+<div class="text-left p-10 leading-relaxed max-w-6xl m-auto">
+    <h1 class= "text-2xl font-bold mb-4  " >Lorem ipsum dolor</h1>
+    <p class="text-sans" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et  dolore Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus adipisci unde similique tempora asperiores aut iure nam, dignissimos officia quod dolores dolor, eveniet, reprehenderit consectetur laboriosam nesciunt. Vero, temporibus deleniti!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. iusto consequuntur reiciendis ducimus, itaque nihil perferendis! Odio earum officiis aliquid fuga repellat incidunt quasi rerum eum. Quo, unde.
+    Necessitatibus optio doloribu ratione doloremque ab maxime voluptatum odit natus voluptate veritatis, ipsum voluptatibus deserunt exercitationem distinctio vitae sint aperiam placeat magni quasi officia minus, quo omnis?
     Magni delectus ad voluptatibus nobis repudiandae quis necessitatibus ut doloribus cupiditate aut, facilis architecto impedit quos officia? Autem et molestias cum odio pariatur quam laboriosam, consequatur quaerat dolor ex quas.
     </p>
 </div>
 
-<div class="text-center font-bold p-10">
-    <h1 class= "text-3xl p" >TL;DR</h1>
-    <p class="">Lorem ipsum dolor sit amsectetur maxi laborum voluptas rerum repudiandae, dignissimos architecto perferendis blanditiis debitis illum odio maiores saepe autem ea culpa!</p>
-    <p class="">Lorem ipsum dolor sit amsectetur maxi laborum volupissimos architecto perferendis blanditiis debitis illum odio maiores saepe autem ea culpa!</p>
-    <p class="">Lorem ipsum dolor sit amsectetur maxi laborum voluptandae, dignissimos architecto perferendis blanditiis debitis illum odio maiores saepe autem ea culpa!</p>
-    <p class="">Lorem ipsum dolor sit amsectetur maxi laborum voluptas rerum rferendis blanditiis debitis illum odio maiores saepe autem ea culpa!</p>
+<div class=" font-bold p-10 leading-relaxed text-center max-w-4xl m-auto">
+   
+    <h1 class=" text-4xl p-4 ">TL;DR</h1>
+    <p class="p-5 text-sans text-lg ">Lorem ipsum dolor sit amsectetur maxi laborum voluptas rerum repudiandae, dignissimos architecto
+        perferendis blanditiis debitis illum odio maiores saepe autem ea culpa!</p>
+    <p class="p-5 text-sans text-lg">Lorem ipsum dolor sit amsectetur maxi laborum volupissimos architecto perferendis blanditiis debitis
+        illum odio maiores saepe autem ea culpa!</p>
+    <p class="p-5 text-sans text-lg">Lorem ipsum dolor sit amsectetur maxi laborum voluptandae, dignissimos architecto perferendis blanditiis
+        debitis illum odio maiores saepe autem ea culpa!</p>
+    <p class="p-5 text-sans text-lg">Lorem ipsum dolor sit amsectetur maxi laborum voluptas rerum rferendis blanditiis debitis illum odio
+        maiores saepe autem ea culpa!</p>
+
 </div>
 
 
@@ -179,18 +198,18 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
 
-<h1 class="text-4xl	text-left font-bold left p-5 "
+<h1 class="text-4xl	text-center font-bold left p-5 "
 style="color: #252627"> Dossier suivant</h1>
 
 
 <div class="wrapper antialiased ">
     <div>
-        <div class="relative">
+        <div class="relative ">
             <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                 class="w-full object-cover object-right  shadow-md" />
             <div class="absolute bottom-0 right-0 -mr-5 mb-10">
                 <div class="bg-white p-4 shadow-lg float-right"
-                    style="color:white; background:rgb(81, 49, 110);">
+                    style="color:white; background:rgb(81, 49, 110); ">
                     <h4 style="font-size:18px" class="text-base  text-right font-bold  flex flex-wrap">Très long titre <br> de
                         l'article
                         sur trois<br> lignes</h4>
@@ -216,12 +235,12 @@ ___________________________________________________________________ -->
 
 
 <section>
-    <div class="pp flex justify-center m-10  ">
-        <div class="block p-6 shadow-lg bg-white max-w-sm text-center transform skew-z-3  "
+    <div class="pp flex justify-center m-10 ">
+        <div class="block p-6 shadow-lg bg-white max-w-xl text-center transform skew-z-3  "
             style="background-color:#00C5BE ; color:#FFFFFF;">
             <h5 class="text-3xl font-bold mb-5">Discutons de votre projet</h5>
 
-            <p class="font-sans text-sm mb-4 text-align-left">
+            <p class="font-sans text-sm mb-4 text-align-left max-w-xl ">
                 Prenez le temps d’échanger à propos de votre projet avec nos conseillers. Nous vous apportons
                 les réponses
                 à vos problématiques.
@@ -241,7 +260,7 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
 
-    <h1 class="text-4xl	text-left font-bold left p-5 "
+    <h1 class="text-4xl	text-center font-bold left p-5 "
     style="color: #252627"> Projet lié</h1>
 
 
@@ -249,13 +268,13 @@ ___________________________________________________________________ -->
         <div>
             <div class="relative">
                 <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
-                    class="w-full object-cover object-right  shadow-md" />
-                <div class="absolute bottom-0 right-0 -mr-5 mb-10">
-                    <div class="bg-white p-4 shadow-lg float-right"
+                    class="w-full object-cover object-left  shadow-md" />
+                <div class="absolute bottom-0 left-0 -ml-5 m-10">
+                    <div class="bg-white p-4 shadow-lg float-left"
                         style="color:white; background:rgb(81, 49, 110);">
-                        <h4 style="font-size:18px" class="text-base  text-right font-bold  flex flex-wrap">Très long titre <br> de
-                            l'article
-                            sur trois<br> lignes</h4>
+                        <h4 style="font-size:18px" class="text-base  text-left font-bold leading-tight  truncate flex flex-wrap">
+                            Titre de l'article sur<br> deux lignes
+                        </h4>
                     </div>
                 </div>
             </div>
@@ -279,9 +298,9 @@ style="color: #252627"> Suivez-nous !</h1>
 <div class="flex justify-center p-2 pb-8 m-4">
 <ul class="flex text-center "
     style="max-width:250px; max-height:50px; min-width:50px; min-height:50px "> 
-    <li><a href="#"><img src="/src/image/logo linkedin-PhotoRoom (1).png" alt=""></a></li>
-    <li><a href="#"><img src="/src/image/insta logo-PhotoRoom.png" alt=""></a></li>
-    <li><a href="#"><img src="/src/image/fb-PhotoRoom.png" alt=""></a></li>
+    <li><a href="#"><img src="/src/images/logo linkedin-PhotoRoom (1).png" alt=""></a></li>
+    <li><a href="#"><img src="/src/images/insta logo-PhotoRoom.png" alt=""></a></li>
+    <li><a href="#"><img src="/src/images/fb-PhotoRoom.png" alt=""></a></li>
 </ul>
 </div>
 
@@ -298,7 +317,7 @@ ___________________________________________________________________ -->
             <div class="  text-center">
                 <div class="gap-4 ">
                     <div class="">
-                        <img class="h-55 inline " src="/src/image/logo-signature.png">
+                        <img class="h-55 inline " src="/src/images/logo-signature.png">
                         <h3 class="text-base font-bold mb-5">L'agence stimulante<br> pour entreprise innovante</h3>
 
                         <ul class=" text-sm	mb-9 ">

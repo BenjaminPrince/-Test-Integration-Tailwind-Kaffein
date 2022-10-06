@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  
   h1{
     font-family: 'raleway', black;
   }

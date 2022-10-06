@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/src/CSS/style.css">
-    <link rel="stylesheet" href="/src/CSS/tailwind.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/tailwind.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@ ___________________________________________________________________ -->
     <nav class="p-5 shadow md:flex md:items-center md:justify-between" style="background-color: rgb(81,49,110) ">
         <div class="flex justify-between items-center ">
             <span class="text-2xl  cursor-pointer">
-                <img class="h-10 inline" src="/src/image/logo-simple_white.png">
+                <img class="h-10 inline" src="/src/images/logo-simple_white.png">
             </span>
 
             <span class="text-3xl cursor-pointer mx-2 md:hidden block">
@@ -66,23 +66,29 @@ ___________________________________________________________________ -->
 
 
 
-    <header>
+    <header style=" overflow:hidden">
         <section>
-            <div class="px-8 pt-48 pb-24 mx-auto lg:px-4 text-white " style="background-color: rgb(81,49,110)">
-                <div class="flex flex-col w-full mb-12 text-left lg:text-center">
-                    <h1 class="mb-6 text-5xl sm:text-6xl" style="font-size: 37px ;">
+            <div class="radius px-8 pt-48 pb-24 mx-auto lg:px-4 text-white "
+                style="background-color: rgb(81,49,110)">
+    
+                <div class=" flex flex-col w-full mb-12 text-left lg:text-center ">
+                    <div class="blog relative">
+                    <h1 class=" mb-6 text-5xl sm:text-6xl" style="font-size: 3rem;">
                         Nos experts sont
                         <br class="md:hidden">
                         aussi des plumes
-                        <h2 class="text-base font-sans" style="font-size: 20px;">
-                            Technique, marketing ou business
-                            <br class="md:hidden">
-                            intelligence, retrouvez tous les sujets qui nous passionnent
-                        </h2>
                     </h1>
-
+                 </div>
+                    <h2 class="text-base font-sans pb-28" style="font-size: 20px;">
+                        Technique, marketing ou business
+                        <br class="md:hidden">
+                        intelligence, retrouvez tous les sujets qui nous passionnent
+                    </h2>
+               
                 </div>
-                <div class="flex lg:justify-center justify-center">
+                
+                
+                <div class="flex lg:justify-center justify-center ">
                     <button style="background-color: rgb(230,96,105); font-size:20px ;"
                         class="transform -skew-y-2 origin-top inline-flex px-12 py-4  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                         Lire nos dossiers</button>
@@ -136,7 +142,7 @@ ___________________________________________________________________ -->
                         <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                             class="w-full object-cover object-left  shadow-md" />
                         <div class="absolute bottom-0 left-0 -ml-5 m-10 ">
-                            <div class="bg-white p-4 shadow-lg float-left text-lg"style="color:white; background:rgb(81, 49, 110)">
+                            <div class="bg-white p-4 shadow-lg float-left text-lg font-semibold"style="color:white; background:rgb(81, 49, 110)">
                                 <h4 class="text-left  ">Titre de l'article sur
                                     <br> deux lignes
                                 </h4>
@@ -159,7 +165,7 @@ ___________________________________________________________________ -->
                         <div class="absolute bottom-0 right-0 -mr-5 mb-10">
                             <div class="bg-white p-4 shadow-lg float-right"
                                 style="color:white; background:rgb(81, 49, 110);">
-                                <h4 style="font-size:18px" class="text-base  text-right font-bold  flex flex-wrap">Très long titre <br> de
+                                <h4 style="font-size:18px" class="text-base  text-right font-semibold  flex flex-wrap">Très long titre <br> de
                                     l'article
                                     sur trois<br> lignes</h4>
                             </div>
@@ -182,7 +188,7 @@ ___________________________________________________________________ -->
                         <div class="absolute bottom-0 left-0 -ml-5 m-10">
                             <div class="bg-white p-4 shadow-lg float-left"
                                 style="color:white; background:rgb(81, 49, 110);">
-                                <h4 style="font-size:18px" class="text-base  text-left font-bold leading-tight  truncate flex flex-wrap">
+                                <h4 style="font-size:18px" class="text-base  text-left font-semibold leading-tight  truncate flex flex-wrap">
                                     Titre de l'article sur<br> deux lignes
                                 </h4>
                             </div>
@@ -204,7 +210,7 @@ ___________________________________________________________________ -->
                         <div class="absolute bottom-0 right-0 -mr-5 mb-10">
                             <div class="bg-white p-4 shadow-lg float-right"
                                 style="color:white; background:rgb(81, 49, 110);">
-                                <h4 style="font-size:18px" class=" text-right  leading-tight  truncate">Très long titre <br>
+                                <h4 style="font-size:18px" class=" text-right  font-semibold  leading-tight  truncate">Très long titre <br>
                                     de
                                     l'article sur trois<br> lignes</h4>
                             </div>
@@ -229,12 +235,12 @@ ___________________________________________________________________ -->
 
 
         <section>
-            <div class="pp flex justify-center m-10  ">
-                <div class=" block p-6 shadow-lg bg-white max-w-sm text-center transform skew-z-3  "
+            <div class="pp flex justify-center m-10 ">
+                <div class=" block p-6 shadow-lg bg-white max-w-xl text-center transform skew-z-3  "
                     style="background-color:#00C5BE ; color:#FFFFFF;">
                     <h5 class="text-3xl font-bold mb-5">Discutons de votre projet</h5>
 
-                    <p class="font-sans text-sm mb-4 text-align-left">
+                    <p class="font-sans text-sm mb-4 text-align-left max-w-xl ">
                         Prenez le temps d’échanger à propos de votre projet avec nos conseillers. Nous vous apportons
                         les réponses
                         à vos problématiques.
@@ -255,9 +261,9 @@ ___________________________________________________________________ -->
 
 
             <section>
-                <div class="px-8 pt-20 pb-24 mx-auto lg:px-4 text-dark  " style="background-color: white">
-                    <div class="flex flex-col w-full mb-12 text-left lg:text-center">
-                        <h1 class="mb-6 text-3xl sm:-rotate-1 font-bold text-center  ">Nous
+                <div class="px-8 pt-20 pb-24 mx-auto lg:px-4 text-dark max-w-2xl " style="background-color: white">
+                    <div class="flex flex-col  w-full mb-12 text-left lg:text-center  ">
+                        <h1 class="mb-6 text-3xl sm:-rotate-1 font-bold text-center">Nous
                             créons, nous developpons et nous vous accompagnons à la comercialisation de vos
                              <span style="color: rgb(0,197,190);">services </span> ou <span style="color: rgb(0,197,190);"> produits </span>!
                         </h1>
@@ -281,9 +287,9 @@ ___________________________________________________________________ -->
             <div class="flex justify-center p-2 pb-8 m-4">
                 <ul class="flex text-center "
                     style="max-width:250px; max-height:50px; min-width:50px; min-height:50px "> 
-                    <li><a href="#"><img src="/src/image/logo linkedin-PhotoRoom (1).png" alt=""></a></li>
-                    <li><a href="#"><img src="/src/image/insta logo-PhotoRoom.png" alt=""></a></li>
-                    <li><a href="#"><img src="/src/image/fb-PhotoRoom.png" alt=""></a></li>
+                    <li><a href="#"><img src="/src/images/logo linkedin-PhotoRoom (1).png" alt=""></a></li>
+                    <li><a href="#"><img src="/src/images/insta logo-PhotoRoom.png" alt=""></a></li>
+                    <li><a href="#"><img src="/src/images/fb-PhotoRoom.png" alt=""></a></li>
                 </ul>
             </div>
 
@@ -311,7 +317,7 @@ ___________________________________________________________________ -->
             <div class="  text-center">
                 <div class="gap-4 ">
                     <div class="">
-                        <img class="h-55 inline " src="/src/image/logo-signature.png">
+                        <img class="h-55 inline " src="/src/images/logo-signature.png">
                         <h3 class="text-base font-bold mb-5">L'agence stimulante<br> pour entreprise innovante</h3>
 
                         <ul class=" text-sm	mb-9 ">
