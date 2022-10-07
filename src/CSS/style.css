@@ -49,6 +49,7 @@ header section .radius{
     text-align: center;
     font-size: 250px;
     margin-left:-10%;
+    
 }
 
 .service ::before{
@@ -69,7 +70,7 @@ header section .radius{
     text-align: center;
     font-size: 198px;
     margin-left:-10%;
-    
+    margin-top: -5%;
 }
 
 .projet ::before{
