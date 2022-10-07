@@ -38,7 +38,59 @@ header section .radius{
     opacity: 0.1;
     text-align: center;
     font-size: 300px;
-  
+
+}
+
+.dossier ::before{
+    position:absolute;
+    content:"Dossier";
+    font-family: 'Bestlady'; 
+    opacity: 0.1;
+    text-align: center;
+    font-size: 250px;
+    margin-left:-10%;
+}
+
+.service ::before{
+    position:absolute;
+    content:"Service";
+    font-family: 'Bestlady'; 
+    opacity: 0.1;
+    text-align: center;
+    font-size: 250px;
+    margin-left:-10%;
+}
+
+.social ::before{
+    position:absolute;
+    content:"Social";
+    font-family: 'Bestlady'; 
+    opacity: 0.1;
+    text-align: center;
+    font-size: 198px;
+    margin-left:-10%;
+    
+}
+
+.projet ::before{
+    position:absolute;
+    content:"Projet";
+    font-family: 'Bestlady'; 
+    opacity: 0.1;
+    text-align: center;
+    font-size: 198px;
+    margin-left:-10%;
+    
+}
+
+.tldr ::before{
+    position:absolute;
+    content:"TL;DR";
+    font-family: 'Bestlady'; 
+    opacity: 0.1;
+    text-align: center;
+    font-size: 198px;
+    margin-left:-10%;
 }
 
 .image {
@@ -51,3 +103,5 @@ header section .radius{
     height: 100%;
     border-radius: 0% 0% 20% 0%;
 }
+
+
