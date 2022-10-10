@@ -31,22 +31,21 @@ header section .radius{
     border-radius: 0% 0% 20% 0%;
 }
 
-.blog ::before{
+.with-letters-background h1::before {
     position:absolute;
-    content:"Blog";
     font-family: 'Bestlady'; 
     opacity: 0.1;
     text-align: center;
-    font-size: 300px;
-
+    z-index:-1;
 }
 
-.dossier ::before{
-    position:absolute;
+.blog ::before{
+    content:"Blog";
+    font-size: 300px;
+}
+
+.dossier h1::before{
     content:"Dossier";
-    font-family: 'Bestlady'; 
-    opacity: 0.1;
-    text-align: center;
     font-size: 250px;
     margin-left:-10%;
     
@@ -54,23 +53,21 @@ header section .radius{
 
 .service ::before{
     position:absolute;
-    content:"Service";
     font-family: 'Bestlady'; 
     opacity: 0.1;
     text-align: center;
-    font-size: 250px;
-    margin-left:-10%;
+    z-index:-1;
+    content:"Service";
+    margin-left:-5%;
+    font-size:300px
 }
 
-.social ::before{
-    position:absolute;
+.social h1::before{
     content:"Social";
-    font-family: 'Bestlady'; 
-    opacity: 0.1;
     text-align: center;
     font-size: 198px;
-    margin-left:-10%;
-    margin-top: -5%;
+   
+   
 }
 
 .projet ::before{
@@ -103,6 +100,7 @@ header section .radius{
     width: 100%;
     height: 100%;
     border-radius: 0% 0% 20% 0%;
+    z-index:-1;
 }
 
 
