@@ -23,7 +23,7 @@
 
                     Navbar
 ___________________________________________________________________ -->
-    <div style="position:relative ; overflow:hidden">
+    <div style="position:relative; overflow:visible">
         <div class=" image radius">
             <nav class="p-5 shadow md:flex md:items-center md:justify-between">
                 <div class="flex justify-between items-center ">
@@ -36,54 +36,52 @@ ___________________________________________________________________ -->
                     </span>
                 </div>
 
-                <ul class="md:flex md:items-center z-[-1] text-white md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
-                    style="font: Raleway;">
-                    <li class="mx-4 my-6 md:my-0 ">
-                        <a href="#" class="text-2xl  hover:text-violet-500 duration-500 ">Agence</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="#" class="text-2xl hover:text-violet-500 duration-500">Services</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="#" class="text-2xl hover:text-violet-500 duration-500">Ka! clients</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="#" class="text-2xl hover:text-violet-500 duration-500">Blog</a>
-                    </li>
-                    <li class="mx-4 my-6 md:my-0">
-                        <a href="#" class="text-2xl hover:text-violet-500 duration-500">Contact</a>
-                    </li>
+                <ul
+                    class=" text-white md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
 
+                    <li class="mx-4 my-6 md:my-0 ">
+                        <a href="#" class="text-2xl  hover:text-violet-300 duration-500 ">Agence</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-2xl hover:text-violet-300 duration-500">Services</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-2xl hover:text-violet-300 duration-500">Ka! clients</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-2xl hover:text-violet-300 duration-500">Blog</a>
+                    </li>
+                    <li class="mx-4 my-6 md:my-0">
+                        <a href="#" class="text-2xl hover:text-violet-300 duration-500">Contact</a>
+                    </li>
 
                 </ul>
             </nav>
-        
+
         </div>
-    <script>
-                function Menu(e){
-                  let list = document.querySelector('ul');
-                  e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-                }
-    </script>
+        <script>
+            function Menu(e) {
+                let list = document.querySelector('ul');
+                e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+            }
+        </script>
         <!-- ___________________________________________________________________
 
                     HEADER
 ___________________________________________________________________ -->
 
 
-<header style="position:relative; overflow:hidden">
+        <header style="position:relative; overflow:hidden">
             <section>
                 <div class="radius  px-8 pt-48 pb-24 mx-auto lg:px-4 text-white ">
                     <div class="flex flex-col w-full mb-12 text-left lg:text-center">
-
+                        <h2 class="text-base font-sans" style="font-size: 20px;">
+                           10 Oct 2022
+                        </h2>
                         <h1 class=" mb-6 text-5xl sm:text-6xl" style="font-size: 37px ;">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
 
-                        <h2 class="text-base font-sans" style="font-size: 20px;">
-                            Technique, marketing ou business
-                            <br class="md:hidden">
-                            intelligence, retrouvez tous les sujets qui nous passionnent
-                        </h2>
+
 
                     </div>
             </section>
@@ -202,26 +200,26 @@ ___________________________________________________________________ -->
     </div>
 
     <div class=" p-10 leading-relaxed text-center max-w-4xl m-auto">
-       
-            <div class="tldr ">
-                <h1 class=" text-4xl md:text-5xl md:mb-20  text-center p-5">TL;DR</h1>
+
+        <div class="tldr ">
+            <h1 class=" text-4xl md:text-5xl md:mb-20  text-center p-5">TL;DR</h1>
         </div>
-    <div class="font-semibold">
-        <p class="p-5 text-sans text-lg ">Lorem ipsum dolor sit amsectetur maxi laborum voluptas rerum repudiandae,
-            dignissimos architecto
-            perferendis blanditiis debitis illum odio maiores saepe autem ea culpa!</p>
-        <p class="p-5 text-sans text-lg">Lorem ipsum dolor sit amsectetur maxi laborum volupissimos architecto
-            perferendis blanditiis debitis
-            illum odio maiores saepe autem ea culpa!</p>
-        <p class="p-5 text-sans text-lg">Lorem ipsum dolor sit amsectetur maxi laborum voluptandae, dignissimos
-            architecto perferendis blanditiis
-            debitis illum odio maiores saepe autem ea culpa!</p>
-        <p class="p-5 text-sans text-lg">Lorem ipsum dolor sit amsectetur maxi laborum voluptas rerum rferendis
-            blanditiis debitis illum odio
-            maiores saepe autem ea culpa!</p>
-    
+        <div class="font-semibold">
+            <p class="p-5 text-sans text-lg ">Lorem ipsum dolor sit amsectetur maxi laborum voluptas rerum repudiandae,
+                dignissimos architecto
+                perferendis blanditiis debitis illum odio maiores saepe autem ea culpa!</p>
+            <p class="p-5 text-sans text-lg">Lorem ipsum dolor sit amsectetur maxi laborum volupissimos architecto
+                perferendis blanditiis debitis
+                illum odio maiores saepe autem ea culpa!</p>
+            <p class="p-5 text-sans text-lg">Lorem ipsum dolor sit amsectetur maxi laborum voluptandae, dignissimos
+                architecto perferendis blanditiis
+                debitis illum odio maiores saepe autem ea culpa!</p>
+            <p class="p-5 text-sans text-lg">Lorem ipsum dolor sit amsectetur maxi laborum voluptas rerum rferendis
+                blanditiis debitis illum odio
+                maiores saepe autem ea culpa!</p>
+
+        </div>
     </div>
-</div>
 
     <!-- ___________________________________________________________________
 
@@ -245,10 +243,10 @@ ___________________________________________________________________ -->
                     </div>
                 </div>
             </div>
-            <div>
-                <p class="text-center p-4 m-2 font-semibold hover:text-green-400 duration-500">
+            <div class="flex justify-center">
+                <button class=" text-center p-4 m-2 font-semibold hover:text-green-400 duration-500">
                     Lire la suite !
-                </p>
+                </button>
             </div>
         </div>
     </div>
@@ -265,7 +263,7 @@ ___________________________________________________________________ -->
 
     <section>
         <div class="pp flex justify-center m-10 ">
-            <div class="block p-6 shadow-lg bg-white max-w-xl text-center transform skew-z-3  "
+            <div class="block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
                 style="background-color:#00C5BE ; color:#FFFFFF;">
                 <h5 class="text-3xl font-bold mb-5">Discutons de votre projet</h5>
 
@@ -289,9 +287,10 @@ ___________________________________________________________________ -->
                Header:  Projet lié
 ___________________________________________________________________ -->
 
-            <div class="projet">
-    <h1 class=" text-4xl md:text-5xl md:mb-20  md:text-center text-left p-5 mt-28" style="color: #252627"> Projet lié</h1>
-            </div>
+    <div class="projet">
+        <h1 class=" text-4xl md:text-5xl md:mb-20  md:text-center text-left p-5 mt-28" style="color: #252627"> Projet
+            lié</h1>
+    </div>
 
     <div class="wrapper antialiased mb-20 ">
         <div>
@@ -307,10 +306,10 @@ ___________________________________________________________________ -->
                     </div>
                 </div>
             </div>
-            <div>
-                <p class="text-center p-4 m-2 font-semibold hover:text-green-400 duration-500">
+            <div class="flex justify-center">
+                <button class=" text-center p-4 m-2 mb-20 font-semibold hover:text-green-400 duration-500">
                     Lire la suite !
-                </p>
+                </button>
             </div>
         </div>
     </div>
@@ -321,20 +320,22 @@ ___________________________________________________________________ -->
                Header:  follows
 ___________________________________________________________________ -->
 
-    <section >
+    <section>
         <div class="social" style="overflow:hidden">
-            <h1 class="text-4xl md:text-5xl md:mb-20 md:text-center text-left p-5" style=" color: #252627"> Suivez-nous !</h1>
+            <h1 class="text-4xl md:text-5xl md:mb-20 md:text-center text-left p-5" style=" color: #252627"> Suivez-nous
+                !</h1>
         </div>
-        <div class="flex justify-center pb-20 m-4">
-            <ul class="flex text-center items-center  " style="max-width:250px; max-height:60px; min-width:50px; min-height:50px ">
+        <div class="flex justify-center pb-12 m-2">
+            <ul class="flex text-center items-center  "
+                style="max-width:250px; max-height:60px; min-width:50px; min-height:50px ">
                 <li><a href="#"><img src="/src/images/Capture-PhotoRoom.png" alt="linkedin"></a></li>
-                    <li><a href="#"><img src="/src/images/Capture3-PhotoRoom (1).png" alt="instagram"></a></li>
-                    <li><a href="#"><img src="/src/images/Capture4.PNG" alt="facebook"></a></li>
+                <li><a href="#"><img src="/src/images/Capture3-PhotoRoom (1).png" alt="instagram"></a></li>
+                <li><a href="#"><img src="/src/images/Capture4.PNG" alt="facebook"></a></li>
             </ul>
         </div>
     </section>
 
-</header>
+    </header>
     <!-- ___________________________________________________________________
 
                     FOOTER
