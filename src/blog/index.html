@@ -83,8 +83,8 @@ ___________________________________________________________________ -->
         <section>
             <div class="radius  px-8 pt-48 pb-24 mx-auto lg:px-4 text-white " style="background-color: rgb(81,49,110)">
 
-                <div class=" flex flex-col w-full mb-12 text-left lg:text-center ">
-                    <div class="blog relative with-letters-background ">
+                <div class="flex flex-col w-full mb-12 text-left lg:text-center ">
+                    <div class="blog relative ">
                         <h1 class=" mb-6 text-5xl sm:text-6xl" style="font-size: 3rem;">
                             Nos experts sont
                             <br class="md:hidden">
@@ -102,7 +102,7 @@ ___________________________________________________________________ -->
 
                 <div class="flex lg:justify-center justify-center pt-24 mt-10 mb-20">
                     <button style="background-color: rgb(230,96,105); font-size:20px ;"
-                        class="transform -skew-y-2 origin-top inline-flex px-12 py-4  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        class=" hover:-skew-y-3 hover:bg-red-700  transform -skew-y-2 origin-top inline-flex px-12 py-4  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                         Lire nos dossiers</button>
                 </div>
             </div>
@@ -124,23 +124,23 @@ ___________________________________________________________________ -->
         <div class="mb-10 flex font-semibold justify-center pb-10  text-center text-base text-sans ">
             <ul class="flex text-center  text-black-900 overflow-x-auto ">
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-100 duration-500 ">Tous </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500 ">Tous </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-100 duration-500">ecommerce </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">ecommerce </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-100 duration-500">ebusiness </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">ebusiness </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-100 duration-500">Business intelligence
+                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">Business intelligence
                     </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-100 duration-500">Marketing </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">Marketing </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-100 duration-500">Formation </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">Formation </a>
                 </li>
             </ul>
         </div>
@@ -150,45 +150,56 @@ ___________________________________________________________________ -->
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 pb-30">
             <div class="wrapper antialiased ">
                 <div>
-                    <div class="relative">
+                    <div class="hover:rotate-1 duration-1000 relative">
                         <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                             class="w-full object-cover object-left  shadow-md" />
-                        <div class="absolute bottom-0 left-0 -ml-5 m-10 ">
-                            <div class="bg-white p-4 shadow-lg float-left text-lg font-semibold"
+                        <div class=" absolute bottom-0 left-0 -ml-5 m-10 ">
+                            <div class="bg-white p-4 shadow-lg float-left text-lg font-semibold "
                                 style="color:white; background:rgb(81, 49, 110)">
+                                <a href="/src/blog/blog-detail.html"> 
                                 <h4 class="text-left  ">Titre de l'article sur
                                     <br> deux lignes
                                 </h4>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center">
-                        <button class=" text-center p-4 m-2 font-semibold hover:text-green-400 duration-500">
-                            Lire la suite !
-                        </button>
+                    <div class="flex justify-center"> 
+                        <a href="/src/blog/blog-detail.html"> 
+                            <button
+                                class="text-center p-4 m-2 font-semibold hover:text-teal-400 duration-500">
+                                Lire la suite !
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="wrapper antialiased ">
                 <div>
-                    <div class="relative">
+                    <div class="hover:rotate-1 duration-1000  relative">
                         <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                             class="w-full object-cover object-right  shadow-md" />
                         <div class="absolute bottom-0 right-0 -mr-5 mb-10">
                             <div class="bg-white p-4 shadow-lg float-right"
                                 style="color:white; background:rgb(81, 49, 110);">
+                                <a href="/src/blog/blog-detail.html"> 
                                 <h4 style="font-size:18px" class="text-base  text-right font-semibold  flex flex-wrap">
                                     Très long titre <br> de
                                     l'article
-                                    sur trois<br> lignes</h4>
+                                    sur trois<br> lignes
+                                </h4>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="flex justify-center">
-                        <button class=" text-center p-4 m-2 font-semibold hover:text-green-400 duration-500">
-                            Lire la suite !
-                        </button>
+                        <a href="/src/blog/blog-detail.html"> 
+                            <button
+                                class="text-center p-4 m-2 font-semibold hover:text-teal-400 duration-500">
+                                Lire la suite !
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -196,46 +207,57 @@ ___________________________________________________________________ -->
 
             <div class="wrapper antialiased ">
                 <div>
-                    <div class="relative">
+                    <div class="hover:rotate-1 duration-1000  relative">
                         <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                             class="w-full object-cover object-left  shadow-md" />
                         <div class="absolute bottom-0 left-0 -ml-5 m-10">
                             <div class="bg-white p-4 shadow-lg float-left"
                                 style="color:white; background:rgb(81, 49, 110);">
+                                <a href="/src/blog/blog-detail.html"> 
                                 <h4 style="font-size:18px"
                                     class="text-base  text-left font-semibold leading-tight  truncate flex flex-wrap">
                                     Titre de l'article sur<br> deux lignes
                                 </h4>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="flex justify-center">
-                        <button class=" text-center p-4 m-2 font-semibold hover:text-green-400 duration-500">
-                            Lire la suite !
-                        </button>
+                        <a href="/src/blog/blog-detail.html"> 
+                            <button
+                                class="text-center p-4 m-2 font-semibold hover:text-teal-400 duration-500">
+                                Lire la suite !
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="wrapper antialiased ">
                 <div>
-                    <div class="relative">
+                    <div class="hover:rotate-1 duration-1000  relative">
                         <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                             class="w-full object-cover object-right  shadow-md" />
                         <div class="absolute bottom-0 right-0 -mr-5 mb-10">
                             <div class="bg-white p-4 shadow-lg float-right"
                                 style="color:white; background:rgb(81, 49, 110);">
+                                <a href="/src/blog/blog-detail.html"> 
                                 <h4 style="font-size:18px" class=" text-right  font-semibold  leading-tight  truncate">
                                     Très long titre <br>
                                     de
-                                    l'article sur trois<br> lignes</h4>
+                                    l'article sur trois<br> lignes
+                                </h4>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="flex justify-center">
-                        <button class=" text-center p-4 m-2 font-semibold hover:text-green-400 duration-500">
-                            Lire la suite !
-                        </button>
+                        <a href="/src/blog/blog-detail.html"> 
+                            <button
+                                class="text-center p-4 m-2 font-semibold hover:text-teal-400 duration-500">
+                                Lire la suite !
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -251,8 +273,8 @@ ___________________________________________________________________ -->
 
 
         <section>
-            <div class="pp flex justify-center m-20 ">
-                <div class=" block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
+            <div class=" pp flex justify-center m-20 ">
+                <div class="  block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
                     style="background-color:#00C5BE ; color:#FFFFFF;">
                     <h5 class="text-3xl font-bold mb-5">Discutons de votre projet</h5>
 
@@ -262,9 +284,12 @@ ___________________________________________________________________ -->
                         à vos problématiques.
 
                     <div class="flex lg:justify-center justify-center m-2 p-6 align-item ">
-                        <button style="background-color: rgb(230,96,105)"
-                            class="transform -skew-x-0 -skew-y-0 px-12 py-4 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        <a href="https://www.kaffein.agency/" >
+                            <button style="background-color: rgb(230,96,105); :hover: rgb(230,96,105)"
+                            class="hover:-skew-y-2 transform -skew-x-0 -skew-y-0 px-12 py-4 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                             Prendre rendez-vous</button>
+                        </a> 
+                        
                     </div>
                     <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
                 </div>
@@ -291,10 +316,14 @@ ___________________________________________________________________ -->
                     </h1>
                 </div>
                 <div class="flex lg:justify-center justify-center p-10 mb-5">
-                    <button style="background-color: rgb(0,197,190); "
-                        class="transform skew-y-2 origin-bottom  inline-flex px-12 py-4 font-semibold text-xl text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
-                        Nos services</button>
+                    <a href="https://www.kaffein.agency/" >
+                    <button style="background-color: rgb(0,197,190);"
+                        class="hover:-skew-y-1 transform skew-y-2 origin-bottom  inline-flex px-12 py-4 font-semibold text-xl text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        Nos services
+                    </button>
+                    </a>
                 </div>
+
             </div>
 
         </section>
@@ -306,11 +335,12 @@ ___________________________________________________________________ -->
                     Suivez-nous !</h1>
             </div>
             <div class="flex justify-center p-14 m-5">
-                <ul class="flex text-center  >
-                    <li><a href="#"><img src="/src/images/Capture-PhotoRoom.png" alt="linkedin"></a></li>
-                    <li><a href="#"><img src="/src/images/Capture3-PhotoRoom (1).png" alt="instagram"></a></li>
-                    <li><a href="#"><img src="/src/images/Capture4.PNG" alt="facebook"></a></li>
-                </ul>
+                <ul class="flex text-center items-center  "
+                style="max-width:250px; max-height:60px; min-width:50px; min-height:50px ">
+                <li><a href="https://www.linkedin.com/company/kaffein-agency"><img src="/src/images/Capture-PhotoRoom.png" alt="linkedin"></a></li>
+                <li><a href="https://www.instagram.com/kaffein.agency/"><img src="/src/images/Capture3-PhotoRoom (1).png" alt="instagram"></a></li>
+                <li><a href="https://www.facebook.com/KaffeinAgency/"><img src="/src/images/Capture4.PNG" alt="facebook"></a></li>
+            </ul>
             </div>
         </div>
 
@@ -342,11 +372,11 @@ ___________________________________________________________________ -->
                         <h3 class="text-base font-bold mb-5">L'agence stimulante<br> pour entreprise innovante</h3>
 
                         <ul class=" text-sm	mb-9 ">
-                            <li><a href="#">Votre future agence</a></li>
-                            <li><a href="#">Votre projet commerce</a></li>
-                            <li><a href="#">Votre projet ebusiness</a></li>
-                            <li><a href="#">Nos clients</a></li>
-                            <li><a href="#">On en parle</a></li>
+                            <li><a href="https://www.kaffein.agency/">Votre future agence</a></li>
+                            <li><a href="https://www.kaffein.agency/">Votre projet commerce</a></li>
+                            <li><a href="https://www.kaffein.agency/">Votre projet ebusiness</a></li>
+                            <li><a href="https://www.kaffein.agency/">Nos clients</a></li>
+                            <li><a href="https://www.kaffein.agency/">On en parle</a></li>
                             <BR></BR>
                             <li><a href="#">Prend un café | Mentions Légales</a></li>
                         </ul>

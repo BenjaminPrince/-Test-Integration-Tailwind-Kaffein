@@ -40,6 +40,10 @@ header section .radius{
 }
 
 .blog ::before{
+    position:absolute;
+    font-family: 'Bestlady'; 
+    opacity: 0.1;
+    text-align: center;
     content:"Blog";
     font-size: 300px;
 }
@@ -48,7 +52,6 @@ header section .radius{
     content:"Dossier";
     font-size: 250px;
     margin-left:-10%;
-    
 }
 
 .service ::before{
@@ -66,7 +69,7 @@ header section .radius{
     content:"Social";
     text-align: center;
     font-size: 198px;
-   
+    z-index:-1;
    
 }
 
