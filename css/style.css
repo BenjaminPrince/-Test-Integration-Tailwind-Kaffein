@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Bestlady'; 
-    src: url("/src/font/BESTLADY.otf") format("opentype");
+    src: url("/font/BESTLADY.otf") format("opentype");
     font-style: normal;
 }
 
@@ -10,6 +10,13 @@
     height: 100%;
     place-items: center
 }
+  
+h1{
+    font-family: 'raleway', black;
+  }
+   h4{
+    font-family: 'raleway', black ;
+  }
 
 .pp{
     transform: 
