@@ -24,7 +24,7 @@
                     Navbar
 ___________________________________________________________________ -->
 
-    <nav class="p-5 shadow md:flex md:items-center md:justify-between" style="background-color: rgb(81,49,110) ">
+    <nav class="p-5 shadow md:flex md:items-center md:justify-between" style="background-color: rgb(81,49,110); height: 10vh ">
         <div class="flex justify-between items-center ">
             <span class="text-2xl  cursor-pointer">
                 <img class="h-10 inline" src="/images/logo-simple_white.png">
@@ -53,9 +53,9 @@ ___________________________________________________________________ -->
             <li class="mx-4 my-6 md:my-0">
                 <a href="#" class="text-2xl hover:text-violet-300 duration-500">Contact</a>
             </li>
-
         </ul>
     </nav>
+
     <script>
         function Menu(e) {
             let list = document.querySelector('ul');
@@ -81,18 +81,17 @@ ___________________________________________________________________ -->
 
 
     <header style=" overflow:hidden">
-        <section>
-            <div class="radius  px-8 pt-48 pb-24 mx-auto lg:px-4 text-white " style="background-color: rgb(81,49,110)">
-
-                <div class="flex flex-col w-full mb-12 text-left lg:text-center ">
+       
+            <div class="radius verticalResp px-8 pt-48 pb-24 mx-auto lg:px-4 text-white " style="background-color: rgb(81,49,110); height: 90vh">
+                <div class="flex flex-col w-full mb-10 text-left lg:text-center ">
                     <div class="blog relative ">
-                        <h1 class=" mb-6 text-5xl sm:text-6xl" style="font-size: 3rem;">
+                        <h1 class=" mb-6 text-4xl sm:text-6xl">
                             Nos experts sont
                             <br class="md:hidden">
                             aussi des plumes
                         </h1>
                     </div>
-                    <h2 class="text-base font-sans pb-28" style="font-size: 20px;">
+                    <h2 class="text-lg sm:6xl font-sans">
                         Technique, marketing ou business
                         <br class="md:hidden">
                         intelligence, retrouvez tous les sujets qui nous passionnent
@@ -101,13 +100,13 @@ ___________________________________________________________________ -->
                 </div>
 
 
-                <div class="flex lg:justify-center justify-center pt-24 mt-10 mb-20">
+                <div class="flex lg:justify-center justify-center pt-20 mt-10">
                     <button style="background-color: rgb(230,96,105); font-size:20px ;"
                         class=" hover:-skew-y-3 hover:bg-red-700  transform -skew-y-2 origin-top inline-flex px-12 py-4  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                         Lire nos dossiers</button>
                 </div>
             </div>
-        </section>
+       
 
 
         <!-- ___________________________________________________________________
@@ -117,12 +116,11 @@ ___________________________________________________________________ -->
 
 
         <div class="dossier relative with-letters-background ">
-            <h1 class="text-4xl md:text-5xl sm:text-center text-left text-black-700 p-6 mt-32" style="color: #252627"
-                font-size="37px">
+            <h1 class="text-4xl md:text-5xl text-center text-black-700 p-6 mt-20 " style="color: #252627">
                 Nos dossiers
             </h1>
         </div>
-        <div class="mb-10 flex font-semibold justify-center pb-10  text-center text-base text-sans ">
+        <div class="mb-10 flex font-semibold justify-center pb-10   text-center text-base text-sans">
             <ul class="flex text-center  text-black-900 overflow-x-auto ">
                 <li class="mx-1 ">
                     <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500 ">Tous </a>
@@ -130,11 +128,11 @@ ___________________________________________________________________ -->
                 <li class="mx-1 ">
                     <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">ecommerce </a>
                 </li>|
-                <li class="mx-1 ">
+                <li class="mx-1 items-center	">
                     <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">ebusiness </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">Business intelligence
+                    <a href="#" class="md:text-xl sm:text-base text-center hover:text-gray-500 duration-500">Business intelligence
                     </a>
                 </li>|
                 <li class="mx-1 ">
@@ -157,7 +155,7 @@ ___________________________________________________________________ -->
                         <div class=" absolute bottom-0 left-0 -ml-5 m-10 ">
                             <div class="bg-white p-4 shadow-lg float-left text-lg font-semibold "
                                 style="color:white; background:rgb(81, 49, 110)">
-                                <a href="/blog/blog-detail.html">
+                                <a href="/article.html">
                                     <h4 class="text-left  ">Titre de l'article sur
                                         <br> deux lignes
                                     </h4>
@@ -166,7 +164,7 @@ ___________________________________________________________________ -->
                         </div>
                     </div>
                     <div class="flex justify-center">
-                        <a href="/blog/blog-detail.html">
+                        <a href="/article.html">
                             <button class="text-center p-4 m-2 font-semibold hover:text-teal-400 duration-500">
                                 Lire la suite !
                             </button>
@@ -183,7 +181,7 @@ ___________________________________________________________________ -->
                         <div class="absolute bottom-0 right-0 -mr-5 mb-10">
                             <div class="bg-white p-4 shadow-lg float-right"
                                 style="color:white; background:rgb(81, 49, 110);">
-                                <a href="/blog/blog-detail.html">
+                                <a href="/article.html">
                                     <h4 style="font-size:18px"
                                         class="text-base  text-right font-semibold  flex flex-wrap">
                                         Très long titre <br> de
@@ -195,7 +193,7 @@ ___________________________________________________________________ -->
                         </div>
                     </div>
                     <div class="flex justify-center">
-                        <a href="/blog/blog-detail.html">
+                        <a href="/article.html">
                             <button class="text-center p-4 m-2 font-semibold hover:text-teal-400 duration-500">
                                 Lire la suite !
                             </button>
@@ -213,7 +211,7 @@ ___________________________________________________________________ -->
                         <div class="absolute bottom-0 left-0 -ml-5 m-10">
                             <div class="bg-white p-4 shadow-lg float-left"
                                 style="color:white; background:rgb(81, 49, 110);">
-                                <a href="/blog/blog-detail.html">
+                                <a href="/article.html">
                                     <h4 style="font-size:18px"
                                         class="text-base  text-left font-semibold leading-tight  truncate flex flex-wrap">
                                         Titre de l'article sur<br> deux lignes
@@ -223,7 +221,7 @@ ___________________________________________________________________ -->
                         </div>
                     </div>
                     <div class="flex justify-center">
-                        <a href="/blog/blog-detail.html">
+                        <a href="/article.html">
                             <button class="text-center p-4 m-2 font-semibold hover:text-teal-400 duration-500">
                                 Lire la suite !
                             </button>
@@ -240,7 +238,7 @@ ___________________________________________________________________ -->
                         <div class="absolute bottom-0 right-0 -mr-5 mb-10">
                             <div class="bg-white p-4 shadow-lg float-right"
                                 style="color:white; background:rgb(81, 49, 110);">
-                                <a href="/blog/blog-detail.html">
+                                <a href="/article.html">
                                     <h4 style="font-size:18px"
                                         class=" text-right  font-semibold  leading-tight  truncate">
                                         Très long titre <br>
@@ -252,7 +250,7 @@ ___________________________________________________________________ -->
                         </div>
                     </div>
                     <div class="flex justify-center">
-                        <a href="/blog/blog-detail.html">
+                        <a href="/article.html">
                             <button class="text-center p-4 m-2 font-semibold hover:text-teal-400 duration-500">
                                 Lire la suite !
                             </button>
@@ -270,29 +268,26 @@ ___________________________________________________________________ -->
                Header:  Discutons de  votre projet
 ___________________________________________________________________ -->
 
-        <section>
-            <div class=" pp flex justify-center m-20 ">
-                <div class="  block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
-                    style="background-color:#00C5BE ; color:#FFFFFF;">
-                    <h5 class="text-3xl font-bold mb-5">Discutons de votre projet</h5>
+<section>
+    <div class="pp flex justify-center m-10 ">
+        <div class="block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
+            style="background-color:#00C5BE ; color:#FFFFFF;">
+            <h5 class="text-2xl font-bold mb-5">Discutons <br> de votre projet</h5>
 
-                    <p class="font-sans text-sm mb-4 text-align-left max-w-xl ">
-                        Prenez le temps d’échanger à propos de votre projet avec nos conseillers. Nous vous apportons
-                        les réponses
-                        à vos problématiques.
+            <p class="font-sans text-sm mb-8 text-align-left max-w-xl ">
+                Prenez le temps d’échanger à propos de votre projet avec nos conseillers. Nous vous apportons
+                les réponses
+                à vos problématiques.
 
-                    <div class="flex lg:justify-center justify-center m-2 p-6 align-item ">
-                        <a href="https://www.kaffein.agency/">
-                            <button style="background-color: rgb(230,96,105)"
-                                class="hover:-skew-y-2 transform -skew-x-0 -skew-y-0 px-12 py-4 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
-                                Prendre rendez-vous</button>
-                        </a>
-
-                    </div>
-                    <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
-                </div>
+            <div class=" flex lg:justify-center justify-center align-item mb-3 ">
+                <button style="background-color: rgb(230,96,105)"
+                    class="hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-10 py-4 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                    Prendre rendez-vous</button>
             </div>
-        </section>
+            <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
+        </div>
+    </div>
+</section>
 
         <!-- ___________________________________________________________________
 
@@ -305,10 +300,10 @@ ___________________________________________________________________ -->
             <div class="  px-8 pt-28 pb-28 mx-auto lg:px-4 text-dark max-w-2xl">
                 <div class="flex flex-col  w-full mb-12 text-left lg:text-center   ">
                     <div class="service relative with-letters-background ">
-                        <h1 class=" mb-6 text-4xl sm:-rotate-1 text-center ">Nous
-                            créons, nous developpons et nous vous accompagnons à la comercialisation de vos</h1>
+                        <h1 class=" mb-6 text-3xl sm:text-4xl -rotate-1 text-center ">Nous
+                            créons, nous developpons et nous vous accompagnons à la comercialisation </h1>
                     </div>
-                    <h1 class=" text-4xl sm:-rotate-1 text-center -m-6">
+                    <h1 class=" text-3xl sm:text-4xl -rotate-1 text-center -m-6">de vos
                         <span style="color: rgb(0,197,190);">services </span> ou <span style="color: rgb(0,197,190);">
                             produits </span>!
                     </h1>
@@ -327,9 +322,15 @@ ___________________________________________________________________ -->
         </section>
 
 
+
+
+         <!-- ___________________________________________________________________
+
+           Header  : Social
+___________________________________________________________________ -->
         <div>
             <div class="social relative with-letters-background ">
-                <h1 class=" text-4xl md:text-5xl md:mb-10  sm:text-center text-left mt-8" style=" color: #252627">
+                <h1 class=" text-4xl md:text-5xl text-center" style=" color: #252627">
                     Suivez-nous !</h1>
             </div>
             <div class="flex justify-center p-14 m-5">
@@ -385,7 +386,7 @@ ___________________________________________________________________ -->
                 </div>
             </div>
 
-            <div class="text-white p-4 text-xs" style="background-color: rgba(0, 0, 0, 0.2)">© 2022 Kaffein Agency SARL
+            <div class="text-white p-4 text-xs">© 2022 Kaffein Agency SARL
             </div>
         </div>
 
