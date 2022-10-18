@@ -15,7 +15,7 @@ h2{
 }
 
 h4{
-    font-family: 'raleway', black ;
+    font-family: 'raleway',
   }
 
 
@@ -69,7 +69,7 @@ h4{
 .blog ::before{
     position:absolute;
     font-family: 'Bestlady'; 
-    opacity: 0.06;
+    opacity: 0.05;
     text-align: center;
     content:"Blog";
     font-size: 240px;
@@ -79,7 +79,8 @@ h4{
 .dossier h1::before{
     content:"Dossier";
     font-size: 230px;
-    margin-left:-5%;
+    margin-left:-10vh;
+    opacity: 0.1;
 }
 
 .service ::before{
@@ -88,15 +89,17 @@ h4{
     opacity: 0.1;
     z-index:-1;
     content:"Service";
-    margin-left:-5%;
+    margin-left:-16vh;
     font-size:220px;
+    align-items: center;
 }
 
 .social h1::before{
     content:"Social";
-    font-size: 180px;
+    font-size: 210px;
     z-index:-1;
-    margin-left:-5%;
+    margin-left:-14vh;
+    align-items: center;
 }
 
 .projet ::before{
@@ -116,8 +119,8 @@ h4{
     font-family: 'Bestlady'; 
     opacity: 0.1;
     text-align: center;
-    font-size: 130px;
-    margin-left:-15%;
+    font-size: 210px;
+    margin-left:-25vh;
 }
 
 
