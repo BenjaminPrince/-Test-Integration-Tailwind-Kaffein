@@ -66,21 +66,28 @@ h4{
     z-index:-1;
 }
 
-.blog ::before{
-    position:absolute;
-    font-family: 'Bestlady'; 
+.blog ::before {
+    position: absolute;
+    font-family: 'Bestlady';
     opacity: 0.05;
     text-align: center;
-    content:"Blog";
-    font-size: 240px;
-    margin-left: -5%;
+    content: "Blog";
+    font-size: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .dossier h1::before{
     content:"Dossier";
     font-size: 230px;
-    margin-left:-10vh;
     opacity: 0.1;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .service ::before{
@@ -89,17 +96,27 @@ h4{
     opacity: 0.1;
     z-index:-1;
     content:"Service";
-    margin-left:-16vh;
-    font-size:220px;
+    
+    font-size:210px;
     align-items: center;
+    
+    margin-left: -5vh;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 .social h1::before{
     content:"Social";
-    font-size: 210px;
+    font-size: 200px;
     z-index:-1;
-    margin-left:-14vh;
     align-items: center;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+
 }
 
 .projet ::before{
@@ -107,9 +124,11 @@ h4{
     content:"Projet";
     font-family: 'Bestlady'; 
     opacity: 0.1;
-    text-align: center;
     font-size: 198px;
-    margin-left:-10%;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
     
 }
 
@@ -119,8 +138,11 @@ h4{
     font-family: 'Bestlady'; 
     opacity: 0.1;
     text-align: center;
-    font-size: 210px;
-    margin-left:-25vh;
+    font-size: 200px;
+    margin-left:-5vh;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 
