@@ -56,7 +56,8 @@ h4{
 
 
 
-/* c'est l'heure du BEFORE pour votre plaisir */
+
+/* c'est l'heure du BEFORE ! */
 
 .with-letters-background h1::before {
     position:absolute;
