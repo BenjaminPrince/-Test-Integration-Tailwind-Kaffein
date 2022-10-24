@@ -24,20 +24,22 @@
                     Navbar
 ___________________________________________________________________ -->
 
-    <nav class="p-5 shadow md:flex md:items-center md:justify-between"
-        style="background-color: rgb(81,49,110); height: 10vh ">
+    <nav class="pl-4 pt-3 pr-3 shadow md:flex md:items-center md:justify-between"
+        style="background-color: #51326e; height: 10vh ">
         <div class="flex justify-between items-center ">
             <span class="text-2xl  cursor-pointer">
-                <img class="h-10 inline" src="/images/logo-simple_white.png">
+                <img class="h-7 sm:h-10 " src="/images/logo-simple_white.png">
             </span>
 
-            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon style="color:white" name="menu" onclick="Menu(this)"></ion-icon>
+            
+
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block ">
+                <ion-icon class="w-10 h-10" style="color:white;" name="reorder-two" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
 
         <ul
-            class=" text-white md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        class=" text-center text-white md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300">
 
             <li class="mx-4 my-6 md:my-0 ">
                 <a href="#" class="text-2xl  hover:text-violet-300 duration-500 ">Agence</a>
@@ -54,21 +56,23 @@ ___________________________________________________________________ -->
             <li class="mx-4 my-6 md:my-0">
                 <a href="#" class="text-2xl hover:text-violet-300 duration-500">Contact</a>
             </li>
+        
+           
         </ul>
     </nav>
 
     <script>
         function Menu(e) {
             let list = document.querySelector('ul');
-            if (e.name === 'menu') {
+            if (e.name === 'reorder-two') {
                 e.name = "close"
                 list.classList.add('top-[80px]')
-                list.classList.add('opacity-100')
-                list.style.background = "rgba(0,0,0,0.9)"
+                list.classList.add("w-screen","h-screen",'opacity-100')
+                list.style.background = "#51326e"
             }
             else {
-                e.name = "menu", list.classList.remove('top-[80px]')
-                list.classList.remove('opacity-100')
+                e.name = "reorder-two", list.classList.remove('top-[20px]')
+                list.classList.remove("w-screen","h-screen",'opacity-100')
             }
         }
     </script>
@@ -83,9 +87,9 @@ ___________________________________________________________________ -->
 
     <header style=" overflow:hidden">
 
-        <div class="radius verticalResp px-8 pt-48 pb-24 mx-auto lg:px-4 text-white "
-            style="background-color: rgb(81,49,110); height: 90vh">
-            <div class="flex flex-col w-full mb-10 text-left lg:text-center ">
+        <div class="radius verticalResp px-8 pt-48 pb-24 mx-auto lg:px-4 text-white  "
+            style="background-color: #51326e; height: 90vh">
+            <div class="flex flex-col w-full mb-10 text-left lg:text-center" style="transform: perspective(200px) rotateX(1deg) rotateY(1deg) rotateZ(-1deg);">
                 <div class="blog relative ">
                     <h1 class=" mb-6 text-4xl sm:text-6xl">
                         Nos experts sont
@@ -93,7 +97,7 @@ ___________________________________________________________________ -->
                         aussi des plumes
                     </h1>
                 </div>
-                <h3 class="text-lg sm:6xl font-sans opacity-90">
+                <h3 class="text-lg sm:6xl font-sans ">
                     Technique, marketing ou business
                     <br class="md:hidden">
                     intelligence, retrouvez tous les sujets qui nous passionnent
@@ -102,9 +106,9 @@ ___________________________________________________________________ -->
             </div>
 
 
-            <div class="flex lg:justify-center justify-center pt-20 mt-10 sm:mt-24">
-                <button style=" font-size:20px ;"
-                    class=" hover:-skew-y-3  bg-[#E56069] hover:bg-[#e14a54]  transform -skew-y-2 origin-top inline-flex px-12 py-4  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+            <div class="flex lg:justify-center justify-center pt-20 mt-10">
+                <button style="background-color: rgb(230,96,105); font-size:20px ;"
+                    class=" hover:-skew-y-3 hover:bg-red-700  transform -skew-y-1 origin-top inline-flex px-12 py-4  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                     Lire nos dossiers</button>
             </div>
         </div>
@@ -134,7 +138,8 @@ ___________________________________________________________________ -->
                     <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">ebusiness </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base text-center hover:text-gray-500 duration-500">Business intelligence
+                    <a href="#" class="md:text-xl sm:text-base text-center hover:text-gray-500 duration-500">Business
+                        intelligence
                     </a>
                 </li>|
                 <li class="mx-1 ">
@@ -152,14 +157,13 @@ ___________________________________________________________________ -->
             <div class="wrapper antialiased ">
                 <div>
                     <div class="hover:-rotate-1 duration-700 relative">
-                        <a href="/article.html">
                         <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                             class="w-full object-cover object-left  shadow-md" />
                         <div class=" absolute bottom-0 left-0 -ml-3  m-10 ">
                             <div class="bg-white p-4 shadow-lg float-left py-1  "
-                                style="color:white; background:rgb(81, 49, 110)">
-                                
-                                    <h4 class=" text-lg text-left font-semibold leading-tight">Titre de l'article sur
+                                style="color:white; background:#51326e">
+                                <a href="/article.html">
+                                    <h4 class=" text-lg text-left font-semibold ">Titre de l'article sur
                                         <br> deux lignes
                                     </h4>
                                 </a>
@@ -168,7 +172,7 @@ ___________________________________________________________________ -->
                     </div>
                     <div class="flex justify-center">
                         <a href="/article.html">
-                            <button class="  text-center p-4 m-2 font-semibold hover:text-teal-400 hover:duration-500">
+                            <button class="text-center p-4 m-2 font-semibold hover:text-teal-400 duration-500">
                                 Lire la suite !
                             </button>
                         </a>
@@ -179,14 +183,13 @@ ___________________________________________________________________ -->
             <div class="wrapper antialiased ">
                 <div>
                     <div class="hover:rotate-1 duration-700  relative">
-                        <a href="/article.html">
                         <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                             class="w-full object-cover object-right  shadow-md" />
                         <div class="absolute bottom-0 right-0 -mr-3 mb-10">
                             <div class="bg-white p-4 shadow-lg float-right py-1 "
-                                style="color:white; background:rgb(81, 49, 110);">
-                                
-                                    <h4 class="text-lg text-right font-semibold leading-tight  flex flex-wrap">
+                                style="color:white; background:#51326e;">
+                                <a href="/article.html">
+                                    <h4 class="text-lg text-right font-semibold  flex flex-wrap">
                                         Très long titre <br> de
                                         l'article
                                         sur trois<br> lignes
@@ -209,13 +212,12 @@ ___________________________________________________________________ -->
             <div class="wrapper antialiased ">
                 <div>
                     <div class="hover:-rotate-1 duration-700  relative">
-                        <a href="/article.html">
-                        <img  src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
+                        <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                             class="w-full object-cover object-left  shadow-md" />
                         <div class="absolute bottom-0 left-0 -ml-3 m-10">
                             <div class="bg-white p-4 shadow-lg float-left py-1 "
-                                style="color:white; background:rgb(81, 49, 110);">
-                                
+                                style="color:white; background:#51326e;">
+                                <a href="/article.html">
                                     <h4 class="text-lg text-left font-semibold leading-tight  truncate flex flex-wrap">
                                         Titre de l'article sur<br> deux lignes
                                     </h4>
@@ -236,13 +238,12 @@ ___________________________________________________________________ -->
             <div class="wrapper antialiased ">
                 <div>
                     <div class="hover:rotate-1 duration-700  relative">
-                        <a href="/article.html">
                         <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
                             class="w-full object-cover object-right  shadow-md" />
                         <div class="absolute bottom-0 right-0 -mr-3 mb-10">
                             <div class="bg-white p-4 shadow-lg float-right py-1 "
-                                style="color:white; background:rgb(81, 49, 110);">
-                               
+                                style="color:white; background:#51326e;">
+                                <a href="/article.html">
                                     <h4 class="text-lg text-right  font-semibold  leading-tight  truncate">
                                         Très long titre <br>
                                         de
@@ -283,8 +284,8 @@ ___________________________________________________________________ -->
                         à vos problématiques.
 
                     <div class=" flex lg:justify-center justify-center align-item mb-3 ">
-                        <button
-                            class="bg-[#E56069] hover:bg-[#e14a54]  text-xl hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-6 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        <button style="background-color: rgb(230,96,105)"
+                            class=" text-xl hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-6 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                             Prendre rendez-vous</button>
                     </div>
                     <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
@@ -312,8 +313,8 @@ ___________________________________________________________________ -->
                 </div>
                 <div class="flex lg:justify-center justify-center pt-10">
                     <a href="https://www.kaffein.agency/">
-                        <button 
-                            class=" bg-[#00C5BE]  hover:bg-[#00aca5] hover:-skew-y-0 transform skew-y-2 origin-bottom  inline-flex px-16 py-4 font-semibold text-xl text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        <button style="background-color: rgb(0,197,190);"
+                            class="hover:-skew-y-1 transform skew-y-2 origin-bottom  inline-flex px-16 py-4 font-semibold text-xl text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                             Nos services
                         </button>
                     </a>
@@ -368,7 +369,7 @@ ___________________________________________________________________ -->
 
 
 
-        <div class="text-white text-center " style="background-color: rgb(81,49,110)">
+        <div class="text-white text-center " style="background-color: #51326e">
             <div class="text-center">
                 <div class="gap-4 ">
                     <div class="">
