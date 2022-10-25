@@ -19,7 +19,9 @@ h4{
   }
 
 
-
+button:focus{
+    background: darken(violet,10%);
+}
 
 .wrapper {
     display: grid;

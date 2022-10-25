@@ -107,13 +107,11 @@ ___________________________________________________________________ -->
 
 
             <div class="flex lg:justify-center justify-center pt-20 mt-10">
-                <button style="background-color: rgb(230,96,105); font-size:20px ;"
-                    class=" hover:-skew-y-3 hover:bg-red-700  transform -skew-y-1 origin-top inline-flex px-12 py-4  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
-                    Lire nos dossiers</button>
+                <a style=" font-size:20px ;"href="#ancrage"
+                  class=" bg-[#E56069] hover:bg-[#e14a54]  hover:-skew-y-3  transform -skew-y-1 origin-top inline-flex px-11 py-3  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                    Lire nos dossiers</a> 
             </div>
         </div>
-
-
 
         <!-- ___________________________________________________________________
 
@@ -121,32 +119,31 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
 
-        <div class="dossier relative with-letters-background">
-            <h1 class="text-4xl md:text-5xl text-left sm:text-center text-black-700 p-6 mt-24 " style="color: #252627">
+        <div class="dossier relative with-letters-background" id="ancrage">
+            <h1  class="text-4xl md:text-5xl text-left sm:text-center text-black-700 p-6 mt-24 " style="color: #252627">
                 Nos dossiers
             </h1>
         </div>
         <div class="mb-10 flex font-semibold justify-center pb-10   text-center text-base text-sans">
-            <ul class="flex text-center  text-black-900 overflow-x-auto ">
+            <ul class="capitalize flex text-center  text-black-900 overflow-x-auto ">
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500 ">Tous </a>
+                    <a href="#" class=" md:text-xl sm:text-base hover:text-violet-500 duration-500 ">Tous </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">ecommerce </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">ecommerce </a>
                 </li>|
                 <li class="mx-1 items-center	">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">ebusiness </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">ebusiness </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base text-center hover:text-gray-500 duration-500">Business
-                        intelligence
+                    <a href="#" style="white-space: nowrap;" class="md:text-xl sm:text-base text-inline hover:text-violet-500 duration-500">Business intelligence
                     </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">Marketing </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">Marketing </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-gray-500 duration-500">Formation </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">Formation </a>
                 </li>
             </ul>
         </div>
@@ -264,7 +261,31 @@ ___________________________________________________________________ -->
             </div>
         </div>
 
-
+        <div class="flex justify-center">
+            <nav aria-label="Page navigation example">
+              <ul class="flex list-style-none">
+                <li class="page-item"><a
+                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
+                    href="#" aria-label="Previous">
+                    <span aria-hidden="true">&lsaquo;</span>
+                  </a></li>
+                <li class="page-item"><a
+                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                    href="#">1</a></li>
+                <li class="page-item"><a
+                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                    href="#">2</a></li>
+                <li class="page-item"><a
+                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                    href="#">3</a></li>
+                <li class="page-item"><a
+                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                    href="#" aria-label="Next">
+                    <span aria-hidden="true">&rsaquo;</span>
+                  </a></li>
+              </ul>
+            </nav>
+          </div>
 
 
         <!-- ___________________________________________________________________
@@ -284,8 +305,8 @@ ___________________________________________________________________ -->
                         à vos problématiques.
 
                     <div class=" flex lg:justify-center justify-center align-item mb-3 ">
-                        <button style="background-color: rgb(230,96,105)"
-                            class=" text-xl hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-6 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        <button 
+                            class="bg-[#E56069] hover:bg-[#e14a54]  text-lg hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-8 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                             Prendre rendez-vous</button>
                     </div>
                     <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
@@ -307,14 +328,14 @@ ___________________________________________________________________ -->
                             créons, nous developpons et nous vous accompagnons à la comercialisation </h1>
                     </div>
                     <h1 class=" text-3xl sm:text-4xl -rotate-1 text-center leading-tight sm:pl-5">de vos
-                        <span style="color: rgb(0,197,190);">services </span> ou <span style="color: rgb(0,197,190);">
+                        <span style="color: #00c5be;">services </span> ou <span style="color: rgb(0,197,190);">
                             produits </span>!
                     </h1>
                 </div>
                 <div class="flex lg:justify-center justify-center pt-10">
                     <a href="https://www.kaffein.agency/">
-                        <button style="background-color: rgb(0,197,190);"
-                            class="hover:-skew-y-1 transform skew-y-2 origin-bottom  inline-flex px-16 py-4 font-semibold text-xl text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        <button 
+                            class="hover:-skew-y-1  bg-[#00c5be] hover:bg-[#00c5ae] transform skew-y-2 origin-bottom  inline-flex px-14 py-3 font-semibold text-xl text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                             Nos services
                         </button>
                     </a>
@@ -374,22 +395,22 @@ ___________________________________________________________________ -->
                 <div class="gap-4 ">
                     <div class="">
                         <img class="inline " src="/images/logo-signature.png">
-                        <h3 class="text-base font-bold mb-5">L'agence stimulante<br> pour entreprise innovante</h3>
+                        <h3 class="text-base font-bold -m-8">L'agence stimulante<br> pour entreprise innovante</h3>
 
-                        <ul class=" text-sm	mb-9  opacity-75">
+                        <ul class=" text-sm	mb-9 mt-16 leading-6  opacity-75">
                             <li><a href="https://www.kaffein.agency/">Votre future agence</a></li>
                             <li><a href="https://www.kaffein.agency/">Votre projet commerce</a></li>
                             <li><a href="https://www.kaffein.agency/">Votre projet ebusiness</a></li>
                             <li><a href="https://www.kaffein.agency/">Nos clients</a></li>
                             <li><a href="https://www.kaffein.agency/">On en parle</a></li>
-                            <BR></BR>
+                            <br>
                             <li><a href="#">Prend un café | Mentions Légales</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="text-white p-4 text-xs opacity-60">© 2022 Kaffein Agency SARL
+            <div class="text-white pb-7 text-xs opacity-60">© 2022 Kaffein Agency SARL
             </div>
         </div>
 
