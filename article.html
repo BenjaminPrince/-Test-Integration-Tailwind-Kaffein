@@ -25,7 +25,7 @@
 ___________________________________________________________________ -->
 
     <div style="position:relative; overflow:visible">
-        <div class="radiusArticle image "></div>
+        <div class=" radiusArticle image "></div>
         <nav class="p-5 shadow md:flex md:items-center md:justify-between ">
             <div class="flex justify-between items-center ">
                 <span class="text-2xl  cursor-pointer">
@@ -60,20 +60,21 @@ ___________________________________________________________________ -->
         </nav>
 
         <script>
-            function Menu(e) {
-                let list = document.querySelector('ul');
-                if (e.name === 'menu') {
-                    e.name = "close"
-                    list.classList.add('top-[80px]')
-                    list.classList.add('opacity-100')
-                    list.style.background = "rgba(0,0,0,0.9)"
-                }
-                else {
-                    e.name = "menu", list.classList.remove('top-[80px]')
-                    list.classList.remove('opacity-100')
-                }
+        function Menu(e) {
+            let list = document.querySelector('ul');
+            if (e.name === 'reorder-two') {
+                e.name = "close"
+                list.classList.add('top-[80px]')
+                list.classList.add("w-screen","h-screen",'opacity-100')
+                list.style.background = "#51326e"
             }
-        </script>
+            else {
+                e.name = "reorder-two", list.classList.remove('top-[20px]')
+                list.classList.remove("w-screen","h-screen",'opacity-100')
+            }
+        }
+    </script>
+
         <!-- ___________________________________________________________________
 
                     HEADER
@@ -99,7 +100,7 @@ ___________________________________________________________________ -->
 
     <div class="text-left mt-5  p-6  leading-relaxed max-w-6xl m-auto">
         <h2 class="text-2xl sm:text-3xl font-bold mb-1 ">Lorem ipsum dolor</h2>
-        <p class="text-sans sm:text-lg text-sm ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        <p class="text-sans sm:text-lg  ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt
             ut labore et dolore magna ultricies integer quis. Iaculis urna id
             illum odio maiores saepe autem ea culpa!
@@ -108,7 +109,7 @@ ___________________________________________________________________ -->
 
     <div class="text-left p-6 leading-relaxed max-w-6xl m-auto">
         <h2 class="text-2xl sm:text-3xl font-bold mb-1 ">Lorem ipsum dolor</h2>
-        <p class="text-sans sm:text-lg text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        <p class="text-sans sm:text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
             volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices
             in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget
@@ -122,7 +123,7 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
     <div class="flex flex-wrap justify-center">
-        <img src="/images/computer.jpg" class="sm:min-w-xs md:max-w-2xl  shadow-lg" alt="image computer" />
+        <img src="https://source.unsplash.com/random/300x500/?web" class="min-h-screen sm:min-h-full  sm:min-w-xs md:max-w-2xl  shadow-lg" alt="image computer" />
     </div>
 
     <!-- ___________________________________________________________________
@@ -132,7 +133,7 @@ ___________________________________________________________________ -->
 
     <div class="text-left p-6 leading-relaxed max-w-6xl m-auto">
         <h2 class="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2  ">Lorem ipsum dolor</h2>
-        <p class="text-sans sm:text-lg text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        <p class="text-sans sm:text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
             volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices
             in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget
@@ -142,7 +143,7 @@ ___________________________________________________________________ -->
 
     <div class="text-right p-6 leading-relaxed max-w-6xl m-auto">
         <h2 class="text-2xl sm:text-3xl font-bold mb-1 ">Lorem ipsum dolor</h2>
-        <p class="text-sans sm:text-lg text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        <p class="text-sans sm:text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
             volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada.
         </p>
@@ -154,7 +155,7 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
     <div class="flex flex-wrap justify-center">
-        <img src="/images/web-computer2.jpg" class="sm:min-w-xs md:max-w-2xl h-auto shadow-lg" alt="" />
+        <img src="https://source.unsplash.com/random/300x500/?blog" class="min-h-screen sm:min-h-full sm:min-w-xs md:max-w-2xl h-auto shadow-lg" alt="" />
     </div>
 
     <!-- ___________________________________________________________________
@@ -164,7 +165,7 @@ ___________________________________________________________________ -->
 
     <div class="text-left p-6 leading-relaxed max-w-6xl m-auto">
         <h2 class="text-2xl sm:text-3xl font-bold mb-1  ">Lorem ipsum dolor</h2>
-        <p class="text-sans sm:text-lg text-sm pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        <p class="text-sans sm:text-lg  pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis
             urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus
             ultrices in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare
@@ -172,6 +173,35 @@ ___________________________________________________________________ -->
 
         </p>
     </div>
+
+
+ <!-- ___________________________________________________________________
+
+               Header:  Discutons de  votre projet
+___________________________________________________________________ -->
+
+<section>
+    <div class="pp flex justify-center m-10">
+        <div class="block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
+            style="background-color:#00C5BE ; color:#FFFFFF;">
+            <h5 class="text-3xl font-bold mb-5 -rotate-1">Discutons <br> de votre projet</h5>
+
+            <p class="font-sans text-sm mb-8 text-align-left max-w-xl -rotate-1 ">
+                Prenez le temps d’échanger à propos de votre projet avec nos conseillers. Nous vous apportons
+                les réponses
+                à vos problématiques.
+
+            <div class=" flex lg:justify-center justify-center align-item mb-3 ">
+                <button 
+                    class="bg-[#E56069] hover:bg-[#e14a54] text-xl hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-6 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                    Prendre rendez-vous</button>
+            </div>
+            <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
+        </div>
+    </div>
+</section>
+
+
 
     <div class=" p-10 mt-5 leading-relaxed text-center max-w-4xl m-auto ">
 
@@ -192,66 +222,9 @@ ___________________________________________________________________ -->
         </div>
     </div>
 
-    <!-- ___________________________________________________________________
-
-               Header:  Dossier suivant
-___________________________________________________________________ -->
-
-    <h1 class="text-4xl	text-left sm:text-center font-bold left p-5 mb-10 " style="color: #252627"> Dossier suivant</h1>
-
-    <div class="wrapper antialiased mb-20 ">
-        <div>
-            <div class="relative hover:-rotate-1 duration-700 ">
-                <a href="/article.html">
-                    <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
-                        class="w-full object-cover object-left  shadow-md" />
-                    <div class="absolute bottom-0 left-0 -ml-3 m-10">
-                        <div class="bg-white p-4 shadow-lg float-left py-1 "
-                            style="color:white; background:#51326e;">
-
-                            <h4 class=" text-lg  text-left font-semibold leading-tight  truncate flex flex-wrap">
-                                Titre de l'article sur<br> deux lignes
-                            </h4>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="flex justify-center">
-        <a href="/article.html">
-            <button class=" text-center p-4  font-semibold duration-500 hover:text-teal-400 ">
-                Lire la suite !
-            </button>
-        </a>
-    </div>
-    </div>
-    </div>
 
 
-    <!-- ___________________________________________________________________
-
-               Header:  Discutons de  votre projet
-___________________________________________________________________ -->
-
-    <section>
-        <div class="pp flex justify-center m-10">
-            <div class="block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
-                style="background-color:#00C5BE ; color:#FFFFFF;">
-                <h5 class="text-3xl font-bold mb-5 -rotate-1">Discutons <br> de votre projet</h5>
-
-                <p class="font-sans text-sm mb-8 text-align-left max-w-xl -rotate-1 ">
-                    Prenez le temps d’échanger à propos de votre projet avec nos conseillers. Nous vous apportons
-                    les réponses
-                    à vos problématiques.
-
-                <div class=" flex lg:justify-center justify-center align-item mb-3 ">
-                    <button 
-                        class="bg-[#E56069] hover:bg-[#e14a54] text-xl hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-6 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
-                        Prendre rendez-vous</button>
-                </div>
-                <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
-            </div>
-        </div>
-    </section>
+   
 
     <!-- ___________________________________________________________________
 
@@ -290,6 +263,40 @@ ___________________________________________________________________ -->
             </div>
         </div>
     </div>
+
+        <!-- ___________________________________________________________________
+
+               Header:  Dossier suivant
+___________________________________________________________________ -->
+
+<h1 class="text-4xl	text-left sm:text-center font-bold left p-5 mb-10 " style="color: #252627"> Dossier suivant</h1>
+
+<div class="wrapper antialiased mb-20 ">
+    <div>
+        <div class="relative hover:-rotate-1 duration-700 ">
+            <a href="/article.html">
+                <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
+                    class="w-full object-cover object-left  shadow-md" />
+                <div class="absolute bottom-0 left-0 -ml-3 m-10">
+                    <div class="bg-white p-4 shadow-lg float-left py-1 "
+                        style="color:white; background:#51326e;">
+
+                        <h4 class=" text-lg  text-left font-semibold leading-tight  truncate flex flex-wrap">
+                            Titre de l'article sur<br> deux lignes
+                        </h4>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="flex justify-center">
+    <a href="/article.html">
+        <button class=" text-center p-4  font-semibold duration-500 hover:text-teal-400 ">
+            Lire la suite !
+        </button>
+    </a>
+</div>
+</div>
+</div>
 
     <!-- ___________________________________________________________________
 

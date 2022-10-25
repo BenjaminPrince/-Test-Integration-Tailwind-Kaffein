@@ -23,6 +23,9 @@ button:focus{
     background: darken(violet,10%);
 }
 
+
+
+
 .wrapper {
     display: grid;
     height: 100%;
@@ -34,11 +37,7 @@ button:focus{
 
 
 .pp{
-    transform: 
-        perspective(1000px)
-        rotateX(4deg)
-        rotateY(-1deg)
-        rotateZ(1deg);
+    transform: perspective(200px) rotateX(1deg) rotateY(-3deg) rotateZ(0deg);
 }
 
 
@@ -132,7 +131,7 @@ button:focus{
 /*  PARTIE Image pour article*/
 
 .image {
-    background: url(https://source.unsplash.com/random/auto/?japan) no-repeat;
+    background: url(https://source.unsplash.com/random/auto/?work) no-repeat;
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -140,6 +139,8 @@ button:focus{
     width: 100%;
     height: 100%;
     z-index:-1;
+    background-color: #51326e;
+    background-blend-mode: luminosity;
 }
 
 
