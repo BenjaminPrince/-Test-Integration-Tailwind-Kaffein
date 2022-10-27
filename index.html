@@ -27,14 +27,11 @@ ___________________________________________________________________ -->
     <nav class="pl-4 pt-3 pr-3 shadow md:flex md:items-center md:justify-between"
         style="background-color: #51326e; height: 10vh ">
         <div class="flex justify-between items-center ">
-            <span class="text-2xl  cursor-pointer">
+            <span class="text-2xl  cursor-pointer ">
                 <img class="h-7 sm:h-10 " src="/images/logo-simple_white.png">
             </span>
-
-            
-
-            <span class="text-3xl cursor-pointer mx-2 md:hidden block ">
-                <ion-icon class="w-10 h-10" style="color:white;" name="reorder-two" onclick="Menu(this)"></ion-icon>
+            <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon class="w-12 h-12" style="color:white;" name="reorder-two" onclick="Menu(this)"></ion-icon>
             </span>
         </div>
 
@@ -67,7 +64,7 @@ ___________________________________________________________________ -->
             if (e.name === 'reorder-two') {
                 e.name = "close"
                 list.classList.add('top-[80px]')
-                list.classList.add("w-screen","h-screen",'opacity-100')
+                list.classList.add("w-full","h-full",'opacity-100')
                 list.style.background = "#51326e"
             }
             else {
@@ -102,15 +99,15 @@ ___________________________________________________________________ -->
                     <br class="md:hidden">
                     intelligence, retrouvez tous les sujets qui nous passionnent
                 </h3>
-
-            </div>
-
-
             <div class="flex lg:justify-center justify-center pt-20 mt-10">
                 <a style=" font-size:20px ;"href="#NosDossiers"
-                  class=" bg-[#E56069] hover:bg-[#e14a54]  hover:-skew-y-2  transform -skew-y-1 origin-top inline-flex px-11 py-3  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                  class=" bg-[#E56069] hover:bg-[#37224b]  hover:-skew-y-1  transform  origin-top inline-flex px-11 py-3  font-semibold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                     Lire nos dossiers</a> 
             </div>
+            </div>
+
+
+           
         </div>
 
         <!-- ___________________________________________________________________
@@ -127,29 +124,29 @@ ___________________________________________________________________ -->
         <div class="mb-10 flex font-semibold justify-center pb-10   text-center text-base text-sans">
             <ul class="capitalize flex text-center  text-black-900 overflow-x-auto ">
                 <li class="mx-1 ">
-                    <a href="#" class=" md:text-xl sm:text-base hover:text-violet-500 duration-500 ">Tous </a>
+                    <a href="#" class=" md:text-xl sm:text-base hover:text-[#51326e] duration-500 ">Tous </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">ecommerce </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-[#51326e] duration-500">ecommerce </a>
                 </li>|
                 <li class="mx-1 items-center	">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">ebusiness </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-[#51326e] duration-500">ebusiness </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" style="white-space: nowrap;" class="md:text-xl sm:text-base text-inline hover:text-violet-500 duration-500">Business intelligence
+                    <a href="#" style="white-space: nowrap;" class="md:text-xl sm:text-base text-inline hover:text-[#51326e] duration-500">Business intelligence
                     </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">Marketing </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-[#51326e] duration-500">Marketing </a>
                 </li>|
                 <li class="mx-1 ">
-                    <a href="#" class="md:text-xl sm:text-base hover:text-violet-500 duration-500">Formation </a>
+                    <a href="#" class="md:text-xl sm:text-base hover:text-[#51326e] duration-500">Formation </a>
                 </li>
             </ul>
         </div>
 
 
-<div class="blog-card hover:bg-dark-500">
+<div class="blog-card ">
         <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 pb-30">
 
             <div class="wrapper antialiased ">
@@ -223,7 +220,7 @@ ___________________________________________________________________ -->
                                     <h4 class="text-lg text-left font-semibold leading-tight  truncate flex flex-wrap">
                                         Titre de l'article sur<br> deux lignes
                                     </h4>
-                                </a>
+                                </a> 
                             </div>
                         </div>
                     </div>
@@ -267,27 +264,36 @@ ___________________________________________________________________ -->
             </div>
         </div>
 
-        <div class="flex justify-center">
-            <nav aria-label="Page navigation example">
-              <ul class="flex list-style-none">
-                <li class="page-item"><a
+
+  <!-- page de navigation       -->
+
+        <div class="flex justify-center pt-5 ml-20">
+            <nav aria-label="Page navigation">
+              <ul class="flex list-style-none text-xl">
+                <!-- <li class="page-item"><a
                     class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 focus:shadow-none"
                     href="#" aria-label="Previous">
                     <span aria-hidden="true">&lsaquo;</span>
-                  </a></li>
+                  </a></li> -->
                 <li class="page-item"><a
-                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                    class="font-semibold page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
                     href="#">1</a></li>
                 <li class="page-item"><a
-                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                    class="font-semibold relative block py-1 px-1 rounded"
+                    href="#">-</a></li>
+                <li class="page-item"><a
+                    class="font-semibold page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
                     href="#">2</a></li>
+                   
                 <li class="page-item"><a
-                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
-                    href="#">3</a></li>
-                <li class="page-item"><a
-                    class="page-link relative block py-1.5 px-3 rounded border-0 bg-transparent outline-none transition-all duration-300 rounded text-gray-800 hover:text-gray-800 hover:bg-gray-200 focus:shadow-none"
+                    class="text-center page-link relative  block pl-12 py-2 px-3  rounded text-white "
                     href="#" aria-label="Next">
-                    <span aria-hidden="true">&rsaquo;</span>
+                    <button  class=" items-center rounded-full bg-[#00C5BE]">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-10 h-10">
+                            <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                          </svg>
+                          
+                      </button>
                   </a></li>
               </ul>
             </nav>
@@ -300,7 +306,7 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
         <section>
-            <div  class="pp flex justify-center text-center sm:pb-20 m-8" >
+            <div  class="pp flex justify-center text-center sm:pb-20 pt-8 m-8" >
                 <div class="block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
                     style="background-color:#00C5BE ; color:#FFFFFF;">
                     <h5 class="text-3xl font-bold mb-5 -rotate-1">Discutons <br> de votre projet</h5>
@@ -311,7 +317,7 @@ ___________________________________________________________________ -->
 
                     <div class=" flex lg:justify-center justify-center align-item mb-3 ">
                         <button 
-                            class="bg-[#E56069] hover:bg-[#e14a54]  text-lg hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-8 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                            class="bg-[#E56069] hover:bg-[#37224b]  text-lg hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-8 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                             Prendre rendez-vous</button>
                     </div>
                     <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
@@ -337,10 +343,10 @@ ___________________________________________________________________ -->
                             produits </span>!
                     </h1>
                 </div>
-                <div class="flex lg:justify-center justify-center pt-10">
+                <div class="flex lg:justify-center justify-center pt-10" style=" transform: perspective(200px) rotateX(2deg) rotateY(2deg) rotateZ(2deg);">
                     <a href="https://www.kaffein.agency/">
                         <button 
-                            class="hover:-skew-y-1  bg-[#00c5be] hover:bg-[#00c5ae] transform skew-y-2 origin-bottom  inline-flex px-14 py-3 font-semibold text-xl text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                            class="hover:-skew-y-1  bg-[#00c5be] hover:bg-[#37224b] transform  origin-bottom  inline-flex px-14 py-3 font-semibold text-xl text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
                             Nos services
                         </button>
                     </a>
@@ -400,7 +406,7 @@ ___________________________________________________________________ -->
                 <div class="gap-4 ">
                     <div class="">
                         <img class="inline " src="/images/logo-signature.png">
-                        <h3 class="text-base italic -m-8">L'agence stimulante<br> pour entreprise innovante</h3>
+                        <h3 class="text-base italic font-semibold -m-8">L'agence stimulante<br> pour entreprise innovante</h3>
 
                         <ul class=" text-sm	mb-9 mt-16 leading-6  opacity-75">
                             <li><a href="https://www.kaffein.agency/">Votre future agence</a></li>

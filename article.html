@@ -26,55 +26,89 @@
 ___________________________________________________________________ -->
 
     <div style="position:relative; overflow:visible">
-        <div class=" radiusArticle image "></div>
-        <nav class="p-5 shadow md:flex md:items-center md:justify-between ">
+        <div class=" radiusArticle image"></div>
+
+         <nav class="p-5 shadow md:flex md:items-center md:justify-between ">
             <div class="flex justify-between items-center ">
                 <span class="text-2xl  cursor-pointer">
-                    <img class="h-10 inline" src="/images/logo-simple_white.png">
+                    <img class="h-8 inline" src="/images/logo-simple_white.png">
                 </span>
+                
+                <!-- <a class="menu text-white w-10 h-10" href="#nav">=</a>
+                <nav class="nav" id="nav">
+                    <ul class="text-white">
+                        <a href="#" class="close ">X</a>
+                        
+                        <li class="mx-4 my-6 md:my-0 ">
+                            <a href="#" class="text-2xl  hover:text-violet-300 duration-500 ">Agence</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-2xl hover:text-violet-300 duration-500">Services</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-2xl hover:text-violet-300 duration-500">Ka! clients</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="/index.html" class="text-2xl hover:text-violet-300 duration-500">Blog</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-2xl hover:text-violet-300 duration-500">Contact</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-xs hover:text-violet-300 duration-500">contact@hotmail.agency</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-xs hover:text-violet-300 duration-500">06.42.57.73.64</a>
+                        </li>
+                    </ul>
+                 
+                </div>
+            </nav>  -->
 
-                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                    <ion-icon style="color:white" name="menu" onclick="Menu(this)"></ion-icon>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block " style="vertical-align: text-basic;">
+                    <ion-icon class="w-10 h-10" style="color:white;" name="reorder-two" onclick="Menu(this)"></ion-icon>
                 </span>
             </div>
-
-            <ul style="z-index:1";
-                class=" text-white md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 p-6 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-
+    
+            <ul
+            class=" text-center text-white md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300">
+    
                 <li class="mx-4 my-6 md:my-0 ">
-                    <a href="#" class="text-2xl  hover:text-violet-100 duration-500 ">Agence</a>
+                    <a href="#" class="text-2xl  hover:text-violet-300 duration-500 ">Agence</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-2xl hover:text-violet-100 duration-500">Services</a>
+                    <a href="#" class="text-2xl hover:text-violet-300 duration-500">Services</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-2xl hover:text-violet-100 duration-500">Ka! clients</a>
+                    <a href="#" class="text-2xl hover:text-violet-300 duration-500">Ka! clients</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0">
-                    <a href="/" class="text-2xl hover:text-violet-100 duration-500">Blog</a>
+                    <a href="/index.html" class="text-2xl hover:text-violet-300 duration-500">Blog</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0">
-                    <a href="#" class="text-2xl hover:text-violet-100 duration-500">Contact</a>
+                    <a href="#" class="text-2xl hover:text-violet-300 duration-500">Contact</a>
                 </li>
-
+            
+               
             </ul>
         </nav>
 
         <script>
-        function Menu(e) {
-            let list = document.querySelector('ul');
-            if (e.name === 'reorder-two') {
-                e.name = "close"
-                list.classList.add('top-[80px]')
-                list.classList.add("w-screen","h-screen",'opacity-100')
-                list.style.background = "#51326e"
+            function Menu(e) {
+                let list = document.querySelector('ul');
+                if (e.name === 'reorder-two') {
+                    e.name = "close"
+                    list.classList.add('top-[80px]')
+                    list.classList.add("w-screen","h-screen",'opacity-100')
+                    list.style.background = "#51326e"
+                }
+                else {
+                    e.name = "reorder-two", list.classList.remove('top-[20px]')
+                    list.classList.remove("w-screen","h-screen",'opacity-100')
+                }
             }
-            else {
-                e.name = "reorder-two", list.classList.remove('top-[20px]')
-                list.classList.remove("w-screen","h-screen",'opacity-100')
-            }
-        }
-    </script>
+        </script>
 
         <!-- ___________________________________________________________________
 
@@ -100,7 +134,7 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
     <div class="text-left mt-5  p-6  leading-relaxed max-w-6xl m-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-1 ">Lorem ipsum dolor</h2>
+        <h2 class="text-4xl sm:text-3xl font-bold mb-1 ">Lorem ipsum dolor</h1>
         <p class="text-sans sm:text-lg  ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt
             ut labore et dolore magna ultricies integer quis. Iaculis urna id
@@ -109,12 +143,15 @@ ___________________________________________________________________ -->
     </div>
 
     <div class="text-left p-6 leading-relaxed max-w-6xl m-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-1 ">Lorem ipsum dolor</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-1 ">Lorem ipsum dolor</h4>
         <p class="text-sans sm:text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
             volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices
             in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget
-            egestas purus
+            egestas purus diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget
+            egestas purus as diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget
+            egestas purus diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget
+            egestas purus.
         </p>
     </div>
 
@@ -124,7 +161,8 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
     <div class="flex flex-wrap justify-center">
-        <img src="https://source.unsplash.com/random/300x500/?web" class="min-h-screen sm:min-h-full  sm:min-w-xs md:max-w-2xl  shadow-lg" alt="image computer" />
+        <img src="https://source.unsplash.com/random/300x500/?web"
+            class="min-h-screen sm:min-h-full  sm:min-w-xs md:max-w-2xl  shadow-lg" alt="image computer" />
     </div>
 
     <!-- ___________________________________________________________________
@@ -133,12 +171,16 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
     <div class="text-left p-6 leading-relaxed max-w-6xl m-auto">
-        <h2 class="text-2xl sm:text-3xl font-bold mb-1 sm:mb-2  ">Lorem ipsum dolor</h2>
+        <h2 class="text-5xl sm:text-3xl font-bold mb-1 sm:mb-2  ">Lorem ipsum dolor</h2>
         <p class="text-sans sm:text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
             volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices
             in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget
-            egestas purus
+            egestas purus incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
+            volutpat lacus laoreet. Mauri us laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus ultrices
+            in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare massa eget
+            egestas purus incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
+            volutpat lacus laoreet. 
         </p>
     </div>
 
@@ -146,6 +188,7 @@ ___________________________________________________________________ -->
         <h2 class="text-2xl sm:text-3xl font-bold mb-1 ">Lorem ipsum dolor</h2>
         <p class="text-sans sm:text-lg ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
+            volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada magna aliqua. Bibendum est ultricies integer quis. Iaculis urna id
             volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada.
         </p>
     </div>
@@ -156,150 +199,195 @@ ___________________________________________________________________ -->
 ___________________________________________________________________ -->
 
 
-<div class="flex items-center justify-center w-full h-full py-10 sm:py-8 px-4">
-    <div class="w-full relative flex items-center justify-center">
-        <button aria-label="slide backward" class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-grey-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" id="prev">
-            <svg class="dark:text-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
-        <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-            <div id="slider" class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+    <div class="flex items-center justify-center w-full h-full py-10 sm:py-8 px-4">
+        <div class="w-full relative flex items-center justify-center">
+            <button aria-label="slide backward"
+                class="absolute z-30 left-0 ml-10 focus:outline-none focus:bg-grey-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
+                id="prev">
+                <svg class="dark:text-white" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+                <div id="slider"
+                    class="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700">
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/fDngH9G/carosel-1.png" alt="black chair and white table"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="sitting area"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/tCfVky2/carosel-3.png" alt="sitting area"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flex flex-shrink-0 relative w-full sm:w-auto">
-                    <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area" class="object-cover object-center w-full" />
-                    <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
-                        <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
-                        <div class="flex h-full items-end pb-6">
-                            <h3 class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900"></h3>
+                    <div class="flex flex-shrink-0 relative w-full sm:w-auto">
+                        <img src="https://i.ibb.co/rFsGfr5/carosel-4.png" alt="sitting area"
+                            class="object-cover object-center w-full" />
+                        <div class="bg-gray-800 bg-opacity-30 absolute w-full h-full p-6">
+                            <h2 class="lg:text-xl leading-4 text-base lg:leading-5 text-white dark:text-gray-900"></h2>
+                            <div class="flex h-full items-end pb-6">
+                                <h3
+                                    class="text-xl lg:text-2xl font-semibold leading-5 lg:leading-6 text-white dark:text-gray-900">
+                                </h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <button aria-label="slide forward"
+                class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
+                id="next">
+                <svg class="text-white" width="8" height="14" viewBox="0 0 8 14" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
         </div>
-        <button aria-label="slide forward" class="absolute z-30 right-0 mr-10 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" id="next">
-            <svg class="text-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-        </button>
     </div>
-</div>
 
-<script>
-let defaultTransform = 0;
-    function goNext() {
-        defaultTransform = defaultTransform - 398;
-        var slider = document.getElementById("slider");
-        if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
-        slider.style.transform = "translateX(" + defaultTransform + "px)";
-    }
-    next.addEventListener("click", goNext);
-    function goPrev() {
-        var slider = document.getElementById("slider");
-        if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-        else defaultTransform = defaultTransform + 398;
-        slider.style.transform = "translateX(" + defaultTransform + "px)";
-    }
-    prev.addEventListener("click", goPrev);
-</script>
+    <script>
+        let defaultTransform = 0;
+        function goNext() {
+            defaultTransform = defaultTransform - 398;
+            var slider = document.getElementById("slider");
+            if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
+            slider.style.transform = "translateX(" + defaultTransform + "px)";
+        }
+        next.addEventListener("click", goNext);
+        function goPrev() {
+            var slider = document.getElementById("slider");
+            if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
+            else defaultTransform = defaultTransform + 398;
+            slider.style.transform = "translateX(" + defaultTransform + "px)";
+        }
+        prev.addEventListener("click", goPrev);
+    </script>
 
 
     <!-- ___________________________________________________________________
@@ -313,37 +401,38 @@ ___________________________________________________________________ -->
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum est ultricies integer quis. Iaculis
             urna id volutpat lacus laoreet. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus
             ultrices in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare
-            massa eget egestas purus
-
+            massa eget egestas purus  et ultrices posuere cubilia Cur et tortor consequante. Mauris vitae ultricies leo integer malesuada. Ac odio tempor orci dapibus
+            ultrices in. Egestas diam in arcu cursus euismod. Dictum fusce ut placerat orci nulla. Tincidunt ornare
+            massa eget egestas purus  et ultrices posuere.
         </p>
     </div>
 
 
- <!-- ___________________________________________________________________
+    <!-- ___________________________________________________________________
 
                Header:  Discutons de  votre projet
 ___________________________________________________________________ -->
 
-<section>
-    <div class="pp flex justify-center m-10">
-        <div class="block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
-            style="background-color:#00C5BE ; color:#FFFFFF;">
-            <h5 class="text-3xl font-bold mb-5 -rotate-1">Discutons <br> de votre projet</h5>
+    <section>
+        <div class="pp flex justify-center m-10">
+            <div class="block p-6 shadow-lg bg-white max-w-2xl text-center transform skew-z-3  "
+                style="background-color:#00C5BE ; color:#FFFFFF;">
+                <h5 class="text-3xl font-bold mb-5 -rotate-1">Discutons <br> de votre projet</h5>
 
-            <p class="font-sans text-sm mb-8 text-align-left max-w-xl -rotate-1 ">
-                Prenez le temps d’échanger à propos de votre projet avec nos conseillers. Nous vous apportons
-                les réponses
-                à vos problématiques.
+                <p class="font-sans text-sm mb-8 text-align-left max-w-xl -rotate-1 ">
+                    Prenez le temps d’échanger à propos de votre projet avec nos conseillers. Nous vous apportons
+                    les réponses
+                    à vos problématiques.
 
-            <div class=" flex lg:justify-center justify-center align-item mb-3 ">
-                <button 
-                    class="bg-[#E56069] hover:bg-[#e14a54] text-xl hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-6 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
-                    Prendre rendez-vous</button>
+                <div class=" flex lg:justify-center justify-center align-item mb-3 ">
+                    <button
+                        class="bg-[#E56069] hover:bg-[#e14a54] text-xl hover:-rotate-1 transform -skew-x-0 -skew-y-0 px-6 py-3 font-bold text-white transition duration-500 ease-in-out shadow-xl focus:shadow-outline focus:outline-none">
+                        Prendre rendez-vous</button>
+                </div>
+                <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
             </div>
-            <a class="text-sm font-sans font-semibold " href="mailto:">Envoyez-nous un mail</a>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -368,7 +457,7 @@ ___________________________________________________________________ -->
 
 
 
-   
+
 
     <!-- ___________________________________________________________________
 
@@ -410,47 +499,48 @@ ___________________________________________________________________ -->
 
         <!-- ___________________________________________________________________
 
-               Header:  Dossier suivant
+               Header:  Dossier suivant (en attente pour supprimer)
 ___________________________________________________________________ -->
 
-<h1 class="text-4xl	text-left sm:text-center font-bold left p-5 mb-10 " style="color: #252627"> Dossier suivant</h1>
+<!-- <h1 class=" text-4xl text-left sm:text-center font-bold left p-5 mb-10 " style=" color: #252627"> Dossier suivant</h1>
 
-<div class="wrapper antialiased mb-20 ">
-    <div>
-        <div class="relative hover:-rotate-1 duration-700 ">
-            <a href="/article.html">
-                <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
-                    class="w-full object-cover object-left  shadow-md" />
-                <div class="absolute bottom-0 left-0 -ml-3 m-10">
-                    <div class="bg-white p-4 shadow-lg float-left py-1 "
-                        style="color:white; background:#51326e;">
+                    <div class="wrapper antialiased mb-20 ">
+                        <div>
+                            <div class="relative hover:-rotate-1 duration-700 ">
+                                <a href="/article.html">
+                                    <img src="https://source.unsplash.com/random/350x350/?blog" alt=" random image"
+                                        class="w-full object-cover object-left  shadow-md" />
+                                    <div class="absolute bottom-0 left-0 -ml-3 m-10">
+                                        <div class="bg-white p-4 shadow-lg float-left py-1 "
+                                            style="color:white; background:#51326e;">
 
-                        <h4 class=" text-lg  text-left font-semibold leading-tight  truncate flex flex-wrap">
-                            Titre de l'article sur<br> deux lignes
-                        </h4>
-            </a>
-        </div>
-    </div>
-</div>
-<div class="flex justify-center">
-    <a href="/article.html">
-        <button class=" text-center p-4  font-semibold duration-500 hover:text-teal-400 ">
-            Lire la suite !
-        </button>
-    </a>
-</div>
-</div>
-</div>
+                                            <h4
+                                                class=" text-lg  text-left font-semibold leading-tight  truncate flex flex-wrap">
+                                                Titre de l'article sur<br> deux lignes
+                                            </h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <a href="/article.html">
+                            <button class=" text-center p-4  font-semibold duration-500 hover:text-teal-400 ">
+                                Lire la suite !
+                            </button>
+                        </a>
+                    </div>
+            </div>
+        </div> -->
 
-    <!-- ___________________________________________________________________
+        <!-- ___________________________________________________________________
 
                Header:  follows
 ___________________________________________________________________ -->
 
-<div>
-    <div class=" social relative with-letters-background mb-10 mt-20">
-                    <h1 class=" text-4xl md:text-5xl text-center" style=" color: #252627">
-                        Suivez-nous !</h1>
+        <div>
+            <div class=" social relative with-letters-background mb-10 mt-20">
+                <h1 class=" text-4xl md:text-5xl text-center" style=" color: #252627">
+                    Suivez-nous !</h1>
             </div>
             <div class="flex justify-center p-7 mb-10">
                 <ul class="flex text-center items-center  "
@@ -470,35 +560,35 @@ ___________________________________________________________________ -->
 
                     FOOTER
 ___________________________________________________________________ -->
-        
-<footer>
-    <div class="text-white text-center " style="background-color: #51326e">
-        <div class="text-center">
-            <div class="gap-4 ">
-                <div class="">
-                    <img class="inline " src="/images/logo-signature.png">
-                    <h3 class="text-base italic -m-8">L'agence stimulante<br> pour entreprise innovante</h3>
 
-                    <ul class=" text-sm	mb-9 mt-16 leading-6  opacity-75">
-                        <li><a href="https://www.kaffein.agency/">Votre future agence</a></li>
-                        <li><a href="https://www.kaffein.agency/">Votre projet commerce</a></li>
-                        <li><a href="https://www.kaffein.agency/">Votre projet ebusiness</a></li>
-                        <li><a href="https://www.kaffein.agency/">Nos clients</a></li>
-                        <li><a href="https://www.kaffein.agency/">On en parle</a></li>
-                        <br>
-                        <li><a href="#">Prend un café | Mentions Légales</a></li>
-                    </ul>
+        <footer>
+            <div class="text-white text-center " style="background-color: #51326e">
+                <div class="text-center">
+                    <div class="gap-4 ">
+                        <div class="">
+                            <img class="inline " src="/images/logo-signature.png">
+                            <h3 class="text-base italic font-semibold -m-8">L'agence stimulante<br> pour entreprise innovante</h3>
+
+                            <ul class=" text-sm	mb-9 mt-16 leading-6  opacity-75">
+                                <li><a href="https://www.kaffein.agency/">Votre future agence</a></li>
+                                <li><a href="https://www.kaffein.agency/">Votre projet commerce</a></li>
+                                <li><a href="https://www.kaffein.agency/">Votre projet ebusiness</a></li>
+                                <li><a href="https://www.kaffein.agency/">Nos clients</a></li>
+                                <li><a href="https://www.kaffein.agency/">On en parle</a></li>
+                                <br>
+                                <li><a href="#">Prend un café | Mentions Légales</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-white pb-7 text-xs opacity-60">© 2022 Kaffein Agency SARL
                 </div>
             </div>
-        </div>
 
-        <div class="text-white pb-7 text-xs opacity-60">© 2022 Kaffein Agency SARL
-        </div>
-    </div>
+        </footer>
 
-    </footer>
-
-        </body>
-            <!-- <script src="/JS/index.js"></script> -->
+</body>
+<!-- <script src="/JS/index.js"></script> -->
 
 </html>
