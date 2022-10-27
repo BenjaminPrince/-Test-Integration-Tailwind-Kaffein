@@ -18,13 +18,15 @@ h4{
     font-family: 'raleway',
   }
 
-
+  
 button:focus{
     background: darken(violet,10%);
 }
 
 
-
+html {
+    scroll-behavior: smooth;
+  }
 
 .wrapper {
     display: grid;
