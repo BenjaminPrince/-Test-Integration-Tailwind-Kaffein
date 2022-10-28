@@ -9,9 +9,13 @@ h1{
   }
 
 h2{
-    font: 'raleway', black;
+    font-family: 'raleway', black;
     font-style: italic;
     font-size: 24px; 
+}
+
+.text-raleway{
+    font-family: 'raleway', black;
 }
 
 h4{
@@ -40,14 +44,7 @@ html {
     transform: perspective(200px) rotateX(1deg) rotateY(-3deg) rotateZ(0deg);
 }
 
-.pp:hover{
-    transform: 
-        perspective(100px)
-        rotateX(-1deg)
-        rotateY(-3deg)
-        rotateZ(2deg)
-        
-}
+
 
 
 .radius{
@@ -84,6 +81,27 @@ html {
     content:"Blog";
     font-size: 240px;
     margin-left: -5%;
+}
+
+.menuBefore ::before{
+    position:absolute;
+    font-family: 'Bestlady'; 
+    opacity: 0.1;
+    z-index:-1;
+    content:"Menu";
+    margin-left:-20vh;
+    font-size:200px;
+    align-items: center;
+}
+
+.menuBeforeBis ::before{
+    position:absolute;
+    font-family: 'Bestlady'; 
+    opacity: 0.1;
+    z-index:-1;
+    content:"Menu";
+    font-size:200px;
+    align-items: center;
 }
 
 .dossier h1::before{
@@ -159,7 +177,7 @@ html {
 
 
 
-/* barre menu */
+/* barre menu responsive */
 
 
 
@@ -167,13 +185,18 @@ html {
 	display:block;
 	text-align:center;
 	position:relative;
+    z-index: 99;
 }
 
 .close {
 	position:absolute;
-	top:.8rem;
-	right: .8rem;
+	top: 20px;
+	right: 20px;
+    transition: all 0.5s ease;
+    z-index: 99;
 }
+
+
 .nav {
 	display:grid;
 	grid-template-columns:100%;
@@ -181,13 +204,13 @@ html {
 	background:#51326e;
 	position:fixed;
 	transform:translateX(100%);
-	align-content:center;
+	padding-top: 100px;
 	width: 100%;
 	height: 100%;
 	top:0;
 	left:0;
-	transition: all 1s ease;
-	
+	transition:"" ;
+    z-index: 99;
 }
 
 a {
@@ -195,6 +218,7 @@ a {
 		display: flex;
 		justify-content:center;
 		align-items:center;
+        
 	}
 
 #nav:target {

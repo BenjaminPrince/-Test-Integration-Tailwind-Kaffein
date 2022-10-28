@@ -25,7 +25,7 @@
                     Navbar
 ___________________________________________________________________ -->
 
-    <div style="position:relative; overflow:visible">
+    <div style="position:relative; overflow:none">
         <div class=" radiusArticle image"></div>
 
          <nav class="p-5 shadow md:flex md:items-center md:justify-between ">
@@ -34,44 +34,53 @@ ___________________________________________________________________ -->
                     <img class="h-8 inline" src="/images/logo-simple_white.png">
                 </span>
                 
-                <!-- <a class="menu text-white w-10 h-10" href="#nav">=</a>
-                <nav class="nav" id="nav">
-                    <ul class="text-white">
-                        <a href="#" class="close ">X</a>
+                <a class="menu  text-white" href="#nav">
+                    <ion-icon class="w-12 h-12" style="color:white;" name="reorder-two" onclick="Menu(this)"></ion-icon>
+
+                </a>
+                <nav class=" nav" id="nav">
+                    <ul class="text-white  "> 
+                        <a href="#" class="close">
+                            <svg class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </a>
                         
-                        <li class="mx-4 my-6 md:my-0 ">
-                            <a href="#" class="text-2xl  hover:text-violet-300 duration-500 ">Agence</a>
+                        <div class="menuBeforeBis relative">
+                            <li class="mx-4 my-6 md:my-0 "></div>
+                                <a href="#" class="text-raleway text-3xl   hover:text-violet-300 duration-500 ">Agence</a>
+                            </li>
+                       
+                        <li class="mx-4 my-6 md:my-0">
+                            <a href="#" class="text-raleway text-3xl hover:text-violet-300 duration-500">Services</a>
                         </li>
                         <li class="mx-4 my-6 md:my-0">
-                            <a href="#" class="text-2xl hover:text-violet-300 duration-500">Services</a>
+                            <a href="#" class="text-raleway text-3xl hover:text-violet-300 duration-500">Ka! clients</a>
                         </li>
                         <li class="mx-4 my-6 md:my-0">
-                            <a href="#" class="text-2xl hover:text-violet-300 duration-500">Ka! clients</a>
+                            <a href="/index.html" class="text-raleway text-3xl hover:text-violet-300 duration-500">Blog</a>
                         </li>
                         <li class="mx-4 my-6 md:my-0">
-                            <a href="/index.html" class="text-2xl hover:text-violet-300 duration-500">Blog</a>
+                            <a href="#" class="text-raleway text-3xl hover:text-violet-300 duration-500">Contact</a>
                         </li>
-                        <li class="mx-4 my-6 md:my-0">
-                            <a href="#" class="text-2xl hover:text-violet-300 duration-500">Contact</a>
-                        </li>
-                        <li class="mx-4 my-6 md:my-0">
+                        <li class="mx-4 my-20 md:my-0">
                             <a href="#" class="text-xs hover:text-violet-300 duration-500">contact@hotmail.agency</a>
                         </li>
-                        <li class="mx-4 my-6 md:my-0">
-                            <a href="#" class="text-xs hover:text-violet-300 duration-500">06.42.57.73.64</a>
+                        <li class="mx-4 -my-20 md:my-0">
+                            <a href="#" class=" text-xs hover:text-violet-300 duration-500">06.42.57.73.64</a>
                         </li>
                     </ul>
-                 
-                </div>
-            </nav>  -->
+                
+                    </div>
+                </nav>
 
 
-                <span class="text-3xl cursor-pointer mx-2 md:hidden block " style="vertical-align: text-basic;">
+                <!-- <span class="text-3xl cursor-pointer mx-2 md:hidden block " style="vertical-align: text-basic;">
                     <ion-icon class="w-10 h-10" style="color:white;" name="reorder-two" onclick="Menu(this)"></ion-icon>
                 </span>
-            </div>
+            </div> -->
     
-            <ul
+            <!-- <ul
             class=" text-center text-white md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300">
     
                 <li class="mx-4 my-6 md:my-0 ">
@@ -92,9 +101,9 @@ ___________________________________________________________________ -->
             
                
             </ul>
-        </nav>
+        </nav> -->
 
-        <script>
+        <!-- <script>
             function Menu(e) {
                 let list = document.querySelector('ul');
                 if (e.name === 'reorder-two') {
@@ -108,7 +117,7 @@ ___________________________________________________________________ -->
                     list.classList.remove("w-screen","h-screen",'opacity-100')
                 }
             }
-        </script>
+        </script> -->
 
         <!-- ___________________________________________________________________
 
